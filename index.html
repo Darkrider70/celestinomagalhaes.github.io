@@ -1,0 +1,1248 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="author" content="Celestino Magalhães">
+<meta name="theme-color" content="#0F2D5C">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Celestino Magalhães">
+<meta property="og:description" content="Celestino Magalhães, Professor Adjunto no Instituto Piaget e investigador em tecnologia educativa: metodologias ativas, robótica, realidade virtual e aumentada e inteligência artificial na formação de professores.">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:locale:alternate" content="en_GB">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230F2D5C'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='%237CC6FF' text-anchor='middle'%3ECM%3C/text%3E%3C/svg%3E">
+<link rel="me" href="https://orcid.org/0000-0001-8933-2594">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Celestino Magalhães</title>
+<meta name="description" content="Celestino Magalhães, Professor Adjunto no Instituto Piaget e investigador em tecnologia educativa: metodologias ativas, robótica, realidade virtual e aumentada e inteligência artificial na formação de professores.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;500&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,500;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Newsreader:ital,opsz,wght@1,6..72,400..500&display=swap">
+<style>
+:root{
+  --paper:#F2F6FB; --surface:#FFFFFF; --ink:#0B2140; --ink-2:#3C5577; --ink-3:#62799A;
+  --rule:#C6D5E8; --grid:rgba(29,88,207,.07);
+  --accent:#1D58CF; --accent-soft:#DDE8FB; --on-accent:#FFFFFF;
+  --bp:#0F2D5C; --bp-2:#143A74; --bp-line:rgba(150,195,255,.17); --bp-ink:#EAF2FF; --bp-dim:#A3C0E8; --bp-accent:#7CC6FF;
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --body:"Atkinson Hyperlegible Next","Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"Atkinson Hyperlegible Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --radius:6px;
+  --shadow:0 1px 0 rgba(11,33,64,.04),0 18px 40px -26px rgba(11,33,64,.45);
+  scroll-padding-top:84px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#06182F; --surface:#0B2546; --ink:#E6EFFB; --ink-2:#AAC1DF; --ink-3:#7F99BD;
+    --rule:#1D3B64; --grid:rgba(124,176,255,.06);
+    --accent:#74AAFF; --accent-soft:#13335D; --on-accent:#041227;
+    --bp:#0A2449; --bp-2:#10315F;
+    --shadow:0 1px 0 rgba(0,0,0,.2),0 18px 40px -26px rgba(0,0,0,.8);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#06182F; --surface:#0B2546; --ink:#E6EFFB; --ink-2:#AAC1DF; --ink-3:#7F99BD;
+  --rule:#1D3B64; --grid:rgba(124,176,255,.06);
+  --accent:#74AAFF; --accent-soft:#13335D; --on-accent:#041227;
+  --bp:#0A2449; --bp-2:#10315F;
+  --shadow:0 1px 0 rgba(0,0,0,.2),0 18px 40px -26px rgba(0,0,0,.8);
+  color-scheme:dark;
+}
+[hidden]{display:none!important}
+[data-lang="en"] [lang="pt-PT"],[data-lang="pt"] [lang="en-GB"]{display:none!important}
+@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}
+body{
+  margin:0;background-color:var(--paper);color:var(--ink);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:32px 32px;
+  font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+.skip{position:absolute;left:-9999px;top:8px;z-index:60;background:var(--accent);color:var(--on-accent);padding:8px 14px;border-radius:4px;text-decoration:none}
+.skip:focus{left:16px}
+.wrap{max-width:1200px;margin-inline:auto;padding-inline:clamp(16px,4vw,44px)}
+.mono{font-family:var(--mono)}
+
+/* Top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb,var(--paper) 88%,transparent);-webkit-backdrop-filter:saturate(1.3) blur(10px);backdrop-filter:saturate(1.3) blur(10px);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;gap:18px;min-height:64px;position:relative}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.brand .mark{display:grid;place-items:center;width:34px;height:34px;border:1.5px solid var(--accent);color:var(--accent);border-radius:4px;font-size:13px;letter-spacing:.02em}
+.nav{display:flex;gap:2px;margin-left:auto}
+.nav a{padding:8px 12px;border-radius:4px;text-decoration:none;color:var(--ink-2);font-size:15px}
+.nav a:hover,.nav a.is-active{color:var(--ink);background:var(--accent-soft)}
+.tools{display:flex;align-items:center;gap:12px}
+.lang{display:inline-flex;border:1px solid var(--rule);border-radius:999px;padding:3px;background:var(--surface)}
+.lang button{font:500 12px/1 var(--mono);letter-spacing:.08em;border:0;background:transparent;color:var(--ink-2);padding:7px 11px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+.progress{font:12px var(--mono);color:var(--ink-3);min-width:3.4em;text-align:right;font-variant-numeric:tabular-nums}
+.menu-btn{display:none;align-items:center;gap:6px;font:500 13px var(--mono);letter-spacing:.06em;text-transform:uppercase;background:var(--surface);color:var(--ink);border:1px solid var(--rule);border-radius:4px;padding:8px 11px;cursor:pointer}
+@media (max-width:920px){
+  .nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--paper);border-bottom:1px solid var(--rule);padding:8px clamp(16px,4vw,44px) 16px;box-shadow:var(--shadow)}
+  .nav.open{display:flex}
+  .nav a{padding:12px}
+  .tools{margin-left:auto}
+  .menu-btn{display:inline-flex}
+}
+@media (max-width:560px){.brand .name{display:none}}
+@media (max-width:400px){.progress{display:none}}
+
+/* Hero */
+.hero{padding-top:clamp(36px,6vw,72px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(28px,4vw,56px);align-items:center}
+@media (max-width:980px){.hero-grid{grid-template-columns:minmax(0,1fr)}}
+.eyebrow{font:500 13px/1.45 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
+h1{font-family:var(--display);font-weight:760;font-size:clamp(2.55rem,6vw,5.3rem);line-height:.98;letter-spacing:-.035em;margin:0 0 22px;text-wrap:balance}
+h1 em,h2 em{font-family:var(--serif);font-style:italic;font-weight:450;letter-spacing:-.015em;color:var(--accent);font-size:1.07em}
+.roles{font:500 14px/1.5 var(--mono);letter-spacing:.07em;text-transform:uppercase;margin:0 0 14px}
+.degrees{list-style:none;padding:0;margin:0 0 22px;display:flex;flex-wrap:wrap;gap:8px}
+.degrees li{font-size:13.5px;border:1px solid var(--rule);background:var(--surface);padding:5px 11px;border-radius:999px;color:var(--ink-2)}
+.lead{font-size:clamp(1.04rem,1.3vw,1.16rem);color:var(--ink-2);max-width:60ch;margin:0 0 28px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:4px;border:1.5px solid var(--ink);text-decoration:none;font-weight:700;font-size:15px;transition:transform .15s ease,background-color .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+
+.model{margin:0;background-color:var(--bp);background-image:linear-gradient(var(--bp-line) 1px,transparent 1px),linear-gradient(90deg,var(--bp-line) 1px,transparent 1px);background-size:24px 24px;color:var(--bp-ink);border-radius:var(--radius);border:1px solid var(--rule);padding:16px;box-shadow:var(--shadow)}
+.model-bar{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px 12px;font:500 11px/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--bp-dim)}
+.model-bar b{color:var(--bp-ink);font-weight:500}
+#orbit{display:block;width:100%;height:auto;margin-block:6px;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
+#orbit.dragging{cursor:grabbing}
+.o-axis{stroke:var(--bp-line);stroke-width:1}
+.o-orbit{fill:none;stroke:var(--bp-dim);stroke-width:1.2;stroke-dasharray:2 5;opacity:.85}
+.o-faint{fill:none;stroke:var(--bp-line);stroke-width:1.2}
+.o-tick{stroke:var(--bp-dim);stroke-width:1;opacity:.55}
+.o-note{fill:var(--bp-dim);font:500 10px var(--mono);letter-spacing:.1em}
+.o-ring{fill:var(--bp-2);stroke:var(--bp-accent);stroke-width:1.4}
+.o-ring2{fill:none;stroke:var(--bp-dim);stroke-width:1;stroke-dasharray:3 4}
+.o-c1{fill:var(--bp-ink);font:700 12.5px var(--display);text-anchor:middle}
+.o-c2{fill:var(--bp-accent);font:italic 500 13.5px var(--serif);text-anchor:middle}
+.o-link{stroke:var(--bp-accent);stroke-width:1.2;stroke-dasharray:4 4}
+.node{cursor:pointer;outline:none}
+.node .dot{fill:var(--bp);stroke:var(--bp-accent);stroke-width:1.8}
+.node .halo{fill:none;stroke:var(--bp-accent);stroke-width:1;opacity:0}
+.node.sel .dot{fill:var(--bp-accent)}
+.node.sel .halo{opacity:1}
+.node:focus-visible .halo{opacity:1;stroke:var(--bp-ink);stroke-width:2}
+.node .lbl{fill:var(--bp-ink);font:700 14px var(--display);text-anchor:middle}
+.node .yr{fill:var(--bp-dim);font:500 10.5px var(--mono);text-anchor:middle;letter-spacing:.08em}
+@media (max-width:560px){.node .lbl{font-size:17px}.node .yr{font-size:13px}.o-c1{font-size:13px}.o-c2{font-size:14px}.o-note{font-size:12px}}
+.caption{border-top:1px solid var(--bp-line);margin-top:4px;padding-top:12px;min-height:7.6em}
+.caption .cap-year{font:500 11px var(--mono);letter-spacing:.1em;color:var(--bp-accent)}
+.caption .cap-title{font:700 1.2rem/1.2 var(--display);margin:4px 0 6px}
+.caption p{margin:0 0 8px;color:var(--bp-dim);font-size:15px;line-height:1.5}
+.caption a{font:500 13px var(--mono);color:var(--bp-accent);text-decoration:none}
+.caption a:hover{text-decoration:underline}
+.model-links{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.model-links a{font:500 12px/1 var(--mono);letter-spacing:.04em;color:var(--bp-ink);text-decoration:none;border:1px solid var(--bp-line);padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.03)}
+.model-links a:hover,.model-links a.on{border-color:var(--bp-accent);color:var(--bp-accent)}
+
+.hero-meta{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;padding-block:30px 34px}
+.place{font:500 13px/1.5 var(--mono);letter-spacing:.05em;color:var(--ink-2);margin:0}
+.place a{color:var(--accent);text-decoration:none;margin-left:10px}
+.titleblock{display:grid;grid-template-columns:auto auto auto;border:1px solid var(--rule);background:var(--surface);font:12px/1.35 var(--mono);border-radius:3px;overflow:hidden}
+.titleblock div{padding:8px 12px;border-left:1px solid var(--rule)}
+.titleblock div:first-child{border-left:0}
+.titleblock small{display:block;color:var(--ink-3);letter-spacing:.08em;text-transform:uppercase;font-size:10.5px}
+.titleblock span{font-variant-numeric:tabular-nums}
+@media (max-width:640px){.titleblock{grid-template-columns:1fr;width:100%}.titleblock div{border-left:0;border-top:1px solid var(--rule)}.titleblock div:first-child{border-top:0}}
+
+.marquee{overflow:hidden;background:var(--bp);color:var(--bp-ink);border-block:1px solid var(--rule)}
+.track{display:flex;width:max-content;animation:slide 48s linear infinite}
+.track span{font:600 clamp(1rem,1.6vw,1.25rem)/1 var(--display);letter-spacing:.12em;text-transform:uppercase;padding:18px 0;white-space:nowrap}
+.track i{font-style:normal;color:var(--bp-accent);padding-inline:22px}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* Sections */
+.section{padding-block:clamp(64px,9vw,118px)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.78fr);gap:14px 48px;align-items:end;margin-bottom:clamp(32px,5vw,56px)}
+.kicker{grid-column:1/-1;font:500 13px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
+h2{font-family:var(--display);font-weight:760;font-size:clamp(2.1rem,4.6vw,3.7rem);line-height:1.02;letter-spacing:-.03em;margin:0;text-wrap:balance}
+.sec-lede{color:var(--ink-2);margin:0;max-width:52ch}
+@media (max-width:820px){.sec-head{grid-template-columns:minmax(0,1fr)}}
+
+/* Work cards */
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+@media (max-width:820px){.cards{grid-template-columns:minmax(0,1fr)}}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+.thumb{position:relative;aspect-ratio:16/9;max-width:100%;background-color:var(--bp);background-image:linear-gradient(var(--bp-line) 1px,transparent 1px),linear-gradient(90deg,var(--bp-line) 1px,transparent 1px);background-size:20px 20px;color:var(--bp-ink);padding:16px 18px;display:grid;grid-template-rows:auto 1fr auto;overflow:hidden}
+.thumb-top,.thumb-bot{font:500 10.5px/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--bp-dim);position:relative;z-index:1}
+.thumb-word{align-self:end;font:750 clamp(1.45rem,2.6vw,2.1rem)/1 var(--display);letter-spacing:-.02em;max-width:52%;position:relative;z-index:1;margin-bottom:10px;text-wrap:balance}
+.thumb-word i{font-style:normal;color:var(--bp-accent)}
+.motif{position:absolute;right:14px;top:50%;transform:translateY(-50%);width:46%;height:78%;fill:none;stroke:var(--bp-accent);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.motif .f{fill:var(--bp-accent);stroke:none}
+.motif .bg{fill:var(--bp)}
+.motif .d{stroke-dasharray:3 4}
+.motif .soft{stroke:var(--bp-dim);opacity:.8}
+.motif .w{stroke-width:2.6}
+.motif text{fill:var(--bp-dim);stroke:none;font:500 9px var(--mono);letter-spacing:.08em}
+.motif .blink{animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.card-body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:12px;flex:1}
+.meta{font:500 12px/1.4 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);margin:0}
+.meta b{color:var(--accent);font-weight:500}
+.card h3{font:720 1.5rem/1.15 var(--display);letter-spacing:-.015em;margin:0;text-wrap:balance}
+.card p{margin:0;color:var(--ink-2)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0}
+.tags li{font-size:12.5px;border:1px solid var(--rule);padding:3px 9px;border-radius:999px;color:var(--ink-2)}
+.card-links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:auto;padding-top:6px}
+.card-links a{font-weight:700;font-size:15px;color:var(--accent);text-decoration:none;border-bottom:1.5px solid transparent}
+.card-links a:hover{border-bottom-color:currentColor}
+
+/* Archive */
+.stats{display:flex;flex-wrap:wrap;gap:16px 48px;margin-bottom:26px}
+.stat b{display:block;font:760 clamp(2.4rem,4vw,3.2rem)/1 var(--display);color:var(--accent);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat span{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.docs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:36px;border-top:1px solid var(--rule)}
+@media (max-width:820px){.docs{grid-template-columns:minmax(0,1fr)}}
+.doc{display:grid;grid-template-columns:2.4em minmax(0,1fr) auto;gap:14px;padding:18px 4px;border-bottom:1px solid var(--rule);text-decoration:none;align-items:start}
+.doc-n{font:500 13px var(--mono);color:var(--ink-3);padding-top:2px;font-variant-numeric:tabular-nums}
+.doc-title{display:block;font-weight:700;line-height:1.38}
+.doc-meta{display:block;font:12.5px/1.5 var(--mono);color:var(--ink-3);margin-top:6px;letter-spacing:.02em}
+.doc-go{color:var(--accent);font-size:18px;line-height:1.2;transition:transform .15s}
+.doc:hover .doc-title{color:var(--accent)}
+.doc:hover .doc-go{transform:translate(2px,-2px)}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);gap:clamp(28px,5vw,64px);align-items:start}
+@media (max-width:880px){.about-grid{grid-template-columns:minmax(0,1fr)}}
+.idcard{background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+.portrait{margin:0 0 18px;width:124px;height:124px;position:relative;padding:6px}
+.portrait img{width:112px;height:112px;object-fit:cover;display:block;border-radius:2px}
+.portrait::before,.portrait::after{content:"";position:absolute;width:16px;height:16px;border:1.5px solid var(--accent)}
+.portrait::before{top:0;left:0;border-right:0;border-bottom:0}
+.portrait::after{bottom:0;right:0;border-left:0;border-top:0}
+.idcard h3{font:720 1.4rem/1.15 var(--display);margin:0 0 4px}
+.idcard .role{margin:0 0 16px;color:var(--ink-2);font-size:15px}
+.ids{margin:0;display:grid;gap:10px;font-size:14px}
+.ids div{border-top:1px solid var(--rule);padding-top:10px}
+.ids dt{font:500 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.ids dd{margin:2px 0 0;font-family:var(--mono);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.ids a{color:var(--accent);text-decoration:none}
+.bio p{max-width:64ch;font-size:1.06rem;margin:0 0 16px}
+.bio p:first-child{font-size:1.18rem;color:var(--ink)}
+.bio p+p{color:var(--ink-2)}
+.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:28px}
+@media (max-width:980px){.skills{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.skills{grid-template-columns:minmax(0,1fr)}}
+.skill{border:1px solid var(--rule);background:var(--surface);padding:15px 17px;border-radius:var(--radius)}
+.skill h4{font:500 11.5px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+.skill p{margin:0;font-weight:700;line-height:1.45;font-size:15.5px}
+.networks{margin-top:24px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.networks .lab{font:500 11.5px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-right:6px}
+.networks span.pill{font-size:13.5px;padding:5px 11px;border-radius:999px;background:var(--accent-soft);color:var(--ink)}
+
+/* Pattern */
+.pattern{background-color:var(--bp);background-image:linear-gradient(var(--bp-line) 1px,transparent 1px),linear-gradient(90deg,var(--bp-line) 1px,transparent 1px);background-size:32px 32px;color:var(--bp-ink);padding-block:clamp(60px,8vw,104px);border-block:1px solid var(--rule)}
+.pattern .kicker{color:var(--bp-accent)}
+.pattern h2 em{color:var(--bp-accent)}
+.pattern .sec-lede{color:var(--bp-dim)}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;list-style:none;padding:0;margin:0;position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:9px;border-top:1px dashed var(--bp-dim);opacity:.6}
+.step{position:relative;padding-top:36px}
+.step::before{content:"";position:absolute;top:0;left:0;width:18px;height:18px;border-radius:50%;background:var(--bp);border:2px solid var(--bp-accent)}
+.step .n{font:500 12px var(--mono);letter-spacing:.1em;color:var(--bp-accent)}
+.step b{display:block;font:720 1.35rem/1.2 var(--display);margin:6px 0 8px}
+.step p{color:var(--bp-dim);margin:0;max-width:34ch}
+@media (max-width:760px){.steps{grid-template-columns:minmax(0,1fr)}.steps::before{display:none}}
+
+/* CV */
+.tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:34px}
+.tab{text-align:left;border:1.5px solid var(--rule);background:var(--surface);padding:16px 18px;border-radius:var(--radius);cursor:pointer;color:var(--ink);font:inherit}
+.tab small{display:block;font:500 11.5px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:2px}
+.tab b{font:720 clamp(1.1rem,2vw,1.35rem)/1.2 var(--display)}
+.tab[aria-selected="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.tab[aria-selected="true"] small{color:var(--accent)}
+.panel{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:start}
+@media (max-width:900px){.panel{grid-template-columns:minmax(0,1fr)}}
+.panel-kick{font:500 12px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin:0}
+.panel h3{font:760 clamp(1.7rem,3vw,2.3rem)/1.06 var(--display);letter-spacing:-.02em;margin:10px 0 12px;text-wrap:balance}
+.panel-intro>p{color:var(--ink-2);margin:0;max-width:52ch}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0;padding:0;list-style:none}
+.chips li{font-size:13px;padding:4px 10px;border-radius:999px;background:var(--accent-soft);color:var(--ink)}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 20px}
+.fact{border:1px solid var(--rule);background:var(--surface);padding:12px 14px;border-radius:var(--radius)}
+.fact small{display:block;font:500 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.fact b{font:600 14.5px/1.4 var(--mono);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+@media (max-width:420px){.facts{grid-template-columns:minmax(0,1fr)}}
+.plinks{display:flex;flex-wrap:wrap;gap:10px}
+.entries{border-bottom:1px solid var(--rule)}
+.entries-hint{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin:0 0 10px}
+details.entry{border-top:1px solid var(--rule)}
+details.entry summary{list-style:none;display:grid;grid-template-columns:8.6em minmax(0,1fr) auto;gap:14px;padding:16px 4px;cursor:pointer;align-items:baseline}
+details.entry summary::-webkit-details-marker{display:none}
+details.entry summary:hover .r-what strong{color:var(--accent)}
+.r-when{font:500 13px var(--mono);color:var(--accent);font-variant-numeric:tabular-nums;white-space:nowrap}
+.r-what strong{display:block;font:700 1.1rem/1.3 var(--display)}
+.r-what span.sub{display:block;color:var(--ink-3);font-size:14.5px;margin-top:2px}
+.r-plus{font:500 20px/1 var(--mono);color:var(--ink-3);transition:transform .2s}
+details[open] .r-plus{transform:rotate(45deg);color:var(--accent)}
+.r-body{padding:0 4px 20px calc(8.6em + 18px);color:var(--ink-2)}
+.r-body p{margin:0 0 10px}
+.refs{margin:0;padding-left:18px;font-size:14.5px;display:grid;gap:8px}
+.refs i{font-style:italic}
+@media (max-width:560px){
+  details.entry summary{grid-template-columns:minmax(0,1fr) auto}
+  .r-when{grid-column:1/-1}
+  .r-body{padding-left:4px}
+}
+.news-sec{padding-bottom:0}
+.news-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:32px;border-top:1px solid var(--rule)}
+@media (max-width:980px){.news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.news-grid{grid-template-columns:minmax(0,1fr)}}
+.news-grid li{display:flex;flex-direction:column;gap:6px;padding:18px 4px 20px;border-bottom:1px solid var(--rule)}
+.n-when{font:500 12.5px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-variant-numeric:tabular-nums}
+.n-what{font-weight:700;line-height:1.4}
+.n-where{font-size:14.5px;color:var(--ink-3)}
+.n-link{font-weight:700;font-size:14.5px;color:var(--accent);text-decoration:none;margin-top:2px}
+.n-link:hover{text-decoration:underline}
+.edu{margin-top:clamp(40px,6vw,64px)}
+.edu-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 20px;margin:0 0 10px}
+.edu h3{font:500 12px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin:0}
+.edu-head a{font-weight:700;font-size:15px;color:var(--accent);text-decoration:none}
+.edu-head a:hover{text-decoration:underline}
+.fact a,.titleblock a{color:var(--accent);text-decoration:none;font-variant-numeric:tabular-nums}
+.fact a:hover,.titleblock a:hover{text-decoration:underline}
+.edu ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:36px;border-top:1px solid var(--rule)}
+@media (max-width:820px){.edu ol{grid-template-columns:minmax(0,1fr)}}
+.edu li{display:grid;grid-template-columns:4.6em minmax(0,1fr);gap:14px;padding:14px 4px;border-bottom:1px solid var(--rule)}
+.edu .y{font:500 13px var(--mono);color:var(--accent);font-variant-numeric:tabular-nums;padding-top:2px}
+.edu b{display:block;font-weight:700;line-height:1.35}
+.edu span.sub{color:var(--ink-3);font-size:14px}
+
+/* Contact */
+.contact h2{font-size:clamp(2.3rem,5.4vw,4.4rem)}
+.tiles{display:grid;grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr));gap:14px;margin-top:36px}
+@media (max-width:1000px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:540px){.tiles{grid-template-columns:minmax(0,1fr)}}
+.tile{border:1px solid var(--rule);background:var(--surface);border-radius:var(--radius);padding:18px;display:flex;flex-direction:column;gap:10px;text-decoration:none;min-height:148px;box-shadow:var(--shadow);transition:border-color .15s}
+a.tile:hover{border-color:var(--accent)}
+.tile small{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.tile b{font:720 1.2rem/1.2 var(--display)}
+.tile .go{margin-top:auto;color:var(--accent);font-size:20px}
+.tile.email{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.tile.email small{color:inherit;opacity:.8}
+.addr{font:500 14px/1.4 var(--mono);overflow-wrap:anywhere;user-select:all;-webkit-user-select:all}
+.tile-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:auto}
+.copy{font:700 14px var(--body);background:var(--on-accent);color:var(--accent);border:0;border-radius:4px;padding:8px 12px;cursor:pointer}
+.tile-actions a{font-size:14px;color:inherit;opacity:.9}
+.copied{font:500 12px var(--mono)}
+
+footer{border-top:1px solid var(--rule);padding-block:26px 34px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;font:12.5px/1.5 var(--mono);color:var(--ink-3);letter-spacing:.03em}
+
+@media (prefers-reduced-motion:reduce){
+  .track{animation:none}
+  .motif .blink{animation:none}
+  *{transition:none!important}
+}
+</style>
+<script>
+(function(){var l='pt';try{var s=localStorage.getItem('cm-lang');if(s==='en'||s==='pt')l=s}catch(e){}
+if(location.hash==='#en')l='en';if(location.hash==='#pt')l='pt';
+var r=document.documentElement;r.setAttribute('data-lang',l);r.lang=(l==='en'?'en-GB':'pt-PT');})();
+</script>
+
+</head>
+<body>
+<a class="skip" href="#main"><span lang="pt-PT">Saltar para o conteúdo</span><span lang="en-GB">Skip to content</span></a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mark">CM</span><span class="name">Celestino Magalhães</span></a>
+    <nav class="nav" id="nav" data-aria-pt="Navegação principal" data-aria-en="Main navigation" aria-label="Navegação principal">
+      <a href="#news"><span lang="pt-PT">Novidades</span><span lang="en-GB">News</span></a>
+      <a href="#work"><span lang="pt-PT">Trabalho</span><span lang="en-GB">Work</span></a>
+      <a href="#lab"><span lang="pt-PT">Arquivo</span><span lang="en-GB">Archive</span></a>
+      <a href="#about"><span lang="pt-PT">Sobre</span><span lang="en-GB">About</span></a>
+      <a href="#cv">CV</a>
+      <a href="#contact"><span lang="pt-PT">Contacto</span><span lang="en-GB">Contact</span></a>
+    </nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-set-lang="pt" aria-pressed="true" title="Português">PT</button>
+        <button type="button" data-set-lang="en" aria-pressed="false" title="English">EN</button>
+      </div>
+      <span class="progress" id="progress" aria-hidden="true">00%</span>
+      <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav"><span lang="pt-PT">Menu</span><span lang="en-GB">Menu</span> ☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span lang="pt-PT">Celestino Magalhães · Tecnologia educativa × formação de professores</span><span lang="en-GB">Celestino Magalhães · Educational technology × teacher education</span></p>
+      <h1 lang="pt-PT">Ensinar a <em>construir</em>. Construir para aprender.</h1>
+      <h1 lang="en-GB">Teaching by <em>building</em>. Building to learn.</h1>
+      <p class="roles"><span lang="pt-PT">Professor Adjunto · Investigador · Formador acreditado</span><span lang="en-GB">Assistant Professor · Researcher · Accredited trainer</span></p>
+      <ul class="degrees">
+        <li><span lang="pt-PT">Doutoramento em curso · Ciências da Educação</span><span lang="en-GB">PhD candidate · Educational Sciences</span></li>
+        <li><span lang="pt-PT">Mestre · Sistemas de Informação</span><span lang="en-GB">MSc · Information Systems</span></li>
+        <li><span lang="pt-PT">Mestre · Tecnologias da Informação e da Comunicação</span><span lang="en-GB">MSc · Information and Communication Technologies</span></li>
+      </ul>
+      <p class="lead" lang="pt-PT">Celestino Magalhães prepara professores para usarem metodologias ativas e tecnologias digitais com intenção pedagógica, do vídeo educativo e da robótica à realidade virtual e aumentada e à inteligência artificial generativa. O seu trabalho liga mais de trinta anos de sala de aula à investigação em tecnologia educativa.</p>
+      <p class="lead" lang="en-GB">Celestino Magalhães prepares teachers to use active methodologies and digital technologies with clear pedagogical intent, from educational video and robotics to virtual and augmented reality and generative AI. His work connects more than thirty years of classroom practice with research in educational technology.</p>
+      <div class="ctas">
+        <a class="btn primary" href="#work"><span lang="pt-PT">Entrar no portefólio ↘</span><span lang="en-GB">Enter the portfolio ↘</span></a>
+        <a class="btn" href="#about"><span lang="pt-PT">Conhecer o Celestino ↓</span><span lang="en-GB">Meet Celestino ↓</span></a>
+      </div>
+    </div>
+
+    <figure class="model" aria-labelledby="modelTitle">
+      <div class="model-bar"><b id="modelTitle"><span lang="pt-PT">Linhas de trabalho · 2014 → 2026</span><span lang="en-GB">Lines of work · 2014 → 2026</span></b><span lang="pt-PT">Modelo interativo</span><span lang="en-GB">Interactive model</span></div>
+      <svg id="orbit" viewBox="0 0 520 330" role="group" data-aria-pt="Modelo das linhas de trabalho. Arraste para rodar e selecione um nó." data-aria-en="Model of the lines of work. Drag to rotate and select a node." aria-label="Modelo das linhas de trabalho. Arraste para rodar e selecione um nó."></svg>
+      <div class="model-bar"><span lang="pt-PT">Arraste para rodar · selecione um nó</span><span lang="en-GB">Drag to orbit · select a node</span><b id="nodeCount">04 / 06</b></div>
+      <div class="caption" id="caption" aria-live="polite"></div>
+      <nav class="model-links" id="modelLinks" data-aria-pt="Projetos em destaque" data-aria-en="Featured projects" aria-label="Projetos em destaque"></nav>
+    </figure>
+  </div>
+
+  <div class="wrap hero-meta">
+    <p class="place"><span lang="pt-PT">Vila Nova de Gaia e Braga, Portugal · Entre a sala de aula e a investigação</span><span lang="en-GB">Vila Nova de Gaia and Braga, Portugal · Working across classroom and research</span><a href="#work"><span lang="pt-PT">Explorar ↓</span><span lang="en-GB">Scroll to explore ↓</span></a></p>
+    <div class="titleblock">
+      <div><small>Ciência ID</small><span>0E19-A634-A97C</span></div>
+      <div><small>ORCID</small><a href="https://orcid.org/0000-0001-8933-2594" target="_blank" rel="noopener">0000-0001-8933-2594 ↗</a></div>
+      <div><small><span lang="pt-PT">Formador CCPFC</span><span lang="en-GB">CCPFC trainer</span></small><span>CCPFC/RFO-27109/10</span></div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track" lang="pt-PT"><span>Pensar<i>✳</i>Imaginar<i>✳</i>Planear<i>✳</i>Construir<i>✳</i>Testar<i>✳</i>Reformular<i>✳</i>Pensar<i>✳</i>Imaginar<i>✳</i>Planear<i>✳</i>Construir<i>✳</i>Testar<i>✳</i>Reformular<i>✳</i></span><span>Pensar<i>✳</i>Imaginar<i>✳</i>Planear<i>✳</i>Construir<i>✳</i>Testar<i>✳</i>Reformular<i>✳</i>Pensar<i>✳</i>Imaginar<i>✳</i>Planear<i>✳</i>Construir<i>✳</i>Testar<i>✳</i>Reformular<i>✳</i></span></div>
+    <div class="track" lang="en-GB"><span>Think<i>✳</i>Imagine<i>✳</i>Plan<i>✳</i>Build<i>✳</i>Test<i>✳</i>Refine<i>✳</i>Think<i>✳</i>Imagine<i>✳</i>Plan<i>✳</i>Build<i>✳</i>Test<i>✳</i>Refine<i>✳</i></span><span>Think<i>✳</i>Imagine<i>✳</i>Plan<i>✳</i>Build<i>✳</i>Test<i>✳</i>Refine<i>✳</i>Think<i>✳</i>Imagine<i>✳</i>Plan<i>✳</i>Build<i>✳</i>Test<i>✳</i>Refine<i>✳</i></span></div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="section news-sec" id="news">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker"><span lang="pt-PT">Novidades · setembro a novembro de 2026</span><span lang="en-GB">News · September to November 2026</span></p>
+      <h2 lang="pt-PT">O que há de <em>novo</em>.</h2>
+      <h2 lang="en-GB">What is <em>new</em>.</h2>
+      <p class="sec-lede" lang="pt-PT">Comunicações, publicações e docência dos últimos meses, em Portugal e no estrangeiro.</p>
+      <p class="sec-lede" lang="en-GB">Talks, publications and teaching from recent months, in Portugal and abroad.</p>
+    </header>
+    <ul class="news-grid">
+      <li><span class="n-when"><span lang="pt-PT">25–30 nov. 2026</span><span lang="en-GB">25–30 Nov 2026</span></span><span class="n-what"><span lang="pt-PT">Leciona «AI in Education» num Postgraduate Certificate sobre IA no ensino superior</span><span lang="en-GB">Teaching “AI in Education” on a Postgraduate Certificate on AI in higher education</span></span><span class="n-where"><span lang="pt-PT">Menntavísindasvið, Universidade da Islândia</span><span lang="en-GB">Menntavísindasvið, University of Iceland</span></span></li>
+      <li><span class="n-when"><span lang="pt-PT">7 nov. 2026</span><span lang="en-GB">7 Nov 2026</span></span><span class="n-what"><span lang="pt-PT">«A Bússola: Traçando a Rota com Metodologias Ativas»</span><span lang="en-GB">“The Compass: Charting the Course with Active Methodologies”</span></span><span class="n-where"><span lang="pt-PT">Learning Innovation Summit 2026 · ATEC, Coimbra</span><span lang="en-GB">Learning Innovation Summit 2026 · ATEC, Coimbra</span></span></li>
+      <li><span class="n-when"><span lang="pt-PT">15 out. 2026</span><span lang="en-GB">15 Oct 2026</span></span><span class="n-what"><span lang="pt-PT">Representou o Instituto Piaget na assinatura da Declaração de Coimbra sobre Educação Digital e IA para o Bem Comum, com 62 instituições de ensino superior</span><span lang="en-GB">Represented Instituto Piaget at the signing of the Coimbra Declaration on Digital Education and AI for the Common Good, alongside 62 higher education institutions</span></span><span class="n-where"><span lang="pt-PT">Rede GeSI DEFIA Portugal · Universidade de Coimbra</span><span lang="en-GB">GeSI DEFIA Portugal network · University of Coimbra</span></span></li>
+      <li><span class="n-when"><span lang="pt-PT">out. 2026</span><span lang="en-GB">Oct 2026</span></span><span class="n-what"><span lang="pt-PT">«O Guia Prático para a IA na Formação: de “Isto funciona?” para “Quem responde por isto?”» e entrevista sobre as novas regras para usar a IA no ensino superior</span><span lang="en-GB">“A Practical Guide to AI in Training: from ‘Does this work?’ to ‘Who answers for this?’” and an interview on the new rules for AI in higher education</span></span><span class="n-where"><span lang="pt-PT">4.º Encontro Nacional de Entidades Formadoras (APEFOR), Viseu · programa Duas de Prosa</span><span lang="en-GB">4th National Meeting of Training Providers (APEFOR), Viseu · Duas de Prosa programme</span></span></li>
+      <li><span class="n-when"><span lang="pt-PT">set. 2026</span><span lang="en-GB">Sep 2026</span></span><span class="n-what"><span lang="pt-PT">Duas comunicações sobre IA, tecnologias imersivas e educação, e workshop europeu sobre o futuro do ensino STEM</span><span lang="en-GB">Two papers on AI, immersive technologies and education, and a European workshop on the future of STEM education</span></span><span class="n-where"><span lang="pt-PT">ICEBM 2026, Varna (Bulgária) · STEM Futures, European Digital Education Hub, Berlim</span><span lang="en-GB">ICEBM 2026, Varna (Bulgaria) · STEM Futures, European Digital Education Hub, Berlin</span></span></li>
+      <li><span class="n-when"><span lang="pt-PT">2026</span><span lang="en-GB">2026</span></span><span class="n-what"><span lang="pt-PT">Novos textos publicados nas atas do IEEE ISEMV, da EDEN 2026 e do IDEAS’26, na revista Indagatio Didactica e num capítulo da IGI Global</span><span lang="en-GB">New papers published in the IEEE ISEMV, EDEN 2026 and IDEAS’26 proceedings, in the journal Indagatio Didactica and in an IGI Global chapter</span></span><span class="n-where"><span lang="pt-PT">Lista completa no arquivo abaixo</span><span lang="en-GB">Full list in the archive below</span></span><a class="n-link" href="#lab"><span lang="pt-PT">Ver o arquivo ↓</span><span lang="en-GB">See the archive ↓</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="section" id="work">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker"><span lang="pt-PT">01 / Trabalho selecionado</span><span lang="en-GB">01 / Selected work</span></p>
+      <h2 lang="pt-PT">Ideias levadas à <em>sala de aula</em>.</h2>
+      <h2 lang="en-GB">Ideas taken into the <em>classroom</em>.</h2>
+      <p class="sec-lede" lang="pt-PT">Projetos de investigação, formação e prática, cada um construído a partir de uma necessidade concreta de professores e alunos.</p>
+      <p class="sec-lede" lang="en-GB">Research, training and practice projects, each built around a concrete need of teachers and learners.</p>
+    </header>
+
+    <div class="cards">
+
+      <!-- 01 VR/AR -->
+      <article class="card" id="p-vr">
+        <div class="thumb" aria-hidden="true">
+          <div class="thumb-top">ClassVR · FrameVR.io · Delightex Edu</div>
+          <svg class="motif" viewBox="0 0 200 150">
+            <g class="d soft"><line x1="16" y1="122" x2="50" y2="62"/><line x1="16" y1="122" x2="100" y2="36"/><line x1="16" y1="122" x2="100" y2="138"/></g>
+            <circle class="f" cx="16" cy="122" r="4"/>
+            <path d="M100 36 L150 62 L100 88 L50 62 Z"/>
+            <path d="M50 62 V112 L100 138 V88"/>
+            <path d="M150 62 V112 L100 138"/>
+            <g class="soft"><line x1="168" y1="30" x2="192" y2="30"/><line x1="168" y1="30" x2="168" y2="8"/><line x1="168" y1="30" x2="156" y2="42"/></g>
+            <text x="186" y="24">x</text><text x="172" y="12">y</text><text x="148" y="50">z</text>
+          </svg>
+          <div class="thumb-word"><span lang="pt-PT">Imersão com <i>intenção</i></span><span lang="en-GB">Immersion with <i>intent</i></span></div>
+          <div class="thumb-bot"><span lang="pt-PT">RV · RA · Formação docente</span><span lang="en-GB">VR · AR · Teacher education</span></div>
+        </div>
+        <div class="card-body">
+          <p class="meta"><b>01</b> / <span lang="pt-PT">Investigação · Formação de professores</span><span lang="en-GB">Research · Teacher education</span></p>
+          <h3><span lang="pt-PT">Realidade virtual e aumentada na formação de professores</span><span lang="en-GB">Virtual and augmented reality in teacher education</span></h3>
+          <p lang="pt-PT">Oficinas acreditadas e investigação sobre a forma como os professores passam do entusiasmo à integração pedagógica da RV e da RA. Os estudos com o ClassVR exploram o papel das emoções no envolvimento dos alunos. Na formação inicial, os estudantes desenham os seus próprios ambientes imersivos no FrameVR.io, uma abordagem publicada em 2026 nas atas do IEEE ISEMV.</p>
+          <p lang="en-GB">Accredited workshops and research on how teachers move from enthusiasm to the pedagogical integration of VR and AR. The ClassVR studies explore the role of emotions in student engagement. In initial teacher education, student teachers design their own immersive environments in FrameVR.io, an approach published in the 2026 IEEE ISEMV proceedings.</p>
+          <ul class="tags"><li>ClassVR</li><li>FrameVR.io</li><li><span lang="pt-PT">Emoções e aprendizagem</span><span lang="en-GB">Emotions and learning</span></li><li>IEEE ISEMV 2026</li><li>IGI Global</li></ul>
+          <div class="card-links">
+            <a href="https://doi.org/10.1007/978-3-031-80475-5_33" target="_blank" rel="noopener"><span lang="pt-PT">Capítulo Springer ↗</span><span lang="en-GB">Springer chapter ↗</span></a>
+            <a href="https://doi.org/10.1109/ISEMV71888.2026.00020" target="_blank" rel="noopener"><span lang="pt-PT">Artigo IEEE ISEMV ↗</span><span lang="en-GB">IEEE ISEMV paper ↗</span></a>
+            <a href="https://doi.org/10.4018/979-8-3373-8735-2.ch015" target="_blank" rel="noopener"><span lang="pt-PT">Capítulo IGI Global ↗</span><span lang="en-GB">IGI Global chapter ↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 Erasmus+ -->
+      <article class="card" id="p-erasmus">
+        <div class="thumb" aria-hidden="true">
+          <div class="thumb-top">2024-1-PL01-KA220-VET-000243150</div>
+          <svg class="motif" viewBox="0 0 200 150">
+            <g class="soft d"><line x1="128" y1="34" x2="150" y2="16"/><line x1="128" y1="34" x2="118" y2="78"/><line x1="118" y1="78" x2="146" y2="120"/><line x1="146" y1="120" x2="184" y2="102"/><line x1="150" y1="16" x2="184" y2="102"/></g>
+            <line x1="24" y1="108" x2="128" y2="34"/><line x1="24" y1="108" x2="150" y2="16"/><line x1="24" y1="108" x2="118" y2="78"/><line x1="24" y1="108" x2="146" y2="120"/><line x1="24" y1="108" x2="184" y2="102"/>
+            <circle class="f" cx="24" cy="108" r="6.5"/>
+            <circle cx="128" cy="34" r="4.5" class="bg"/><circle cx="150" cy="16" r="4.5" class="bg"/><circle cx="118" cy="78" r="4.5" class="bg"/><circle cx="146" cy="120" r="4.5" class="bg"/><circle cx="184" cy="102" r="4.5" class="bg"/>
+            <text x="18" y="130">PT</text><text x="110" y="30">PL</text><text x="160" y="20">LT</text><text x="98" y="82">HR</text><text x="138" y="140">GR</text><text x="176" y="122">TR</text>
+          </svg>
+          <div class="thumb-word"><span lang="pt-PT">Seis países, um <i>toolkit</i></span><span lang="en-GB">Six countries, one <i>toolkit</i></span></div>
+          <div class="thumb-bot"><span lang="pt-PT">RV · RA · Ensino profissional</span><span lang="en-GB">VR · AR · Vocational education</span></div>
+        </div>
+        <div class="card-body">
+          <p class="meta"><b>02</b> / <span lang="pt-PT">Projeto Erasmus+ KA220-VET · 2024–2026</span><span lang="en-GB">Erasmus+ KA220-VET project · 2024–2026</span></p>
+          <h3>The Power of AR and VR</h3>
+          <p lang="pt-PT">Parceria europeia que leva a realidade aumentada e virtual ao ensino profissional. O Instituto Piaget é o parceiro português: pilotou o toolkit para aprendizagem interdisciplinar com professores e estudantes, organizou o evento multiplicador em Gaia e acolheu a reunião final no Porto.</p>
+          <p lang="en-GB">A European partnership bringing augmented and virtual reality into vocational education. Instituto Piaget is the Portuguese partner: it piloted the cross-disciplinary toolkit with teachers and students, ran the multiplier event in Gaia and hosted the final meeting in Porto.</p>
+          <ul class="tags"><li>Erasmus+</li><li>VET</li><li>AR &amp; VR Toolkit</li><li>TECH-EDU 2026</li></ul>
+          <div class="card-links">
+            <a href="#cv" data-tab="research"><span lang="pt-PT">Ver no percurso ↓</span><span lang="en-GB">See in the CV ↓</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 Robotics -->
+      <article class="card" id="p-robotics">
+        <div class="thumb" aria-hidden="true">
+          <div class="thumb-top">LEGO SPIKE · VinciBot · Tale-Bot Pro</div>
+          <svg class="motif" viewBox="0 0 200 150">
+            <g class="soft">
+              <rect x="40" y="16" width="120" height="120"/>
+              <line x1="64" y1="16" x2="64" y2="136"/><line x1="88" y1="16" x2="88" y2="136"/><line x1="112" y1="16" x2="112" y2="136"/><line x1="136" y1="16" x2="136" y2="136"/>
+              <line x1="40" y1="40" x2="160" y2="40"/><line x1="40" y1="64" x2="160" y2="64"/><line x1="40" y1="88" x2="160" y2="88"/><line x1="40" y1="112" x2="160" y2="112"/>
+            </g>
+            <path class="w" d="M52 118 V76 H124 V28 H140"/>
+            <path class="f" d="M140 23 L148 28 L140 33 Z"/>
+            <rect x="43" y="115" width="18" height="18" rx="3" class="bg"/>
+            <circle class="f" cx="49" cy="121" r="1.8"/><circle class="f" cx="55" cy="121" r="1.8"/>
+            <line x1="150" y1="20" x2="150" y2="36"/><path class="f" d="M150 20 L158 23 L150 26 Z"/>
+            <text x="4" y="128">1.º</text>
+          </svg>
+          <div class="thumb-word"><span lang="pt-PT">Robôs que fazem <i>pensar</i></span><span lang="en-GB">Robots that make you <i>think</i></span></div>
+          <div class="thumb-bot"><span lang="pt-PT">Pensamento computacional · PT ↔ EUA</span><span lang="en-GB">Computational thinking · PT ↔ USA</span></div>
+        </div>
+        <div class="card-body">
+          <p class="meta"><b>03</b> / <span lang="pt-PT">Prática · Colégio Alfacoop</span><span lang="en-GB">Practice · Colégio Alfacoop</span></p>
+          <h3><span lang="pt-PT">Robótica educativa e AlfaCreators</span><span lang="en-GB">Educational robotics and AlfaCreators</span></h3>
+          <p lang="pt-PT">Desafios de matemática com robôs para desenvolver o pensamento computacional desde o 1.º ano. No Colégio Alfacoop, o programa AlfaCreators e o clube AlfaROBOT dão continuidade a este trabalho, com uma parceria transatlântica com o Oakesdale School District, no estado de Washington (EUA).</p>
+          <p lang="en-GB">Mathematics challenges with robots to develop computational thinking from the first year of primary school. At Colégio Alfacoop, the AlfaCreators programme and the AlfaROBOT club carry this work forward, with a transatlantic partnership with the Oakesdale School District in Washington State, USA.</p>
+          <ul class="tags"><li><span lang="pt-PT">Pensamento computacional</span><span lang="en-GB">Computational thinking</span></li><li>KIBO Ambassador</li><li>LEGO SPIKE</li></ul>
+          <div class="card-links">
+            <a href="https://hdl.handle.net/1822/74001" target="_blank" rel="noopener"><span lang="pt-PT">Atividades com robôs no 1.º ano ↗</span><span lang="en-GB">Robot activities for Year 1 ↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 04 AI -->
+      <article class="card" id="p-ai">
+        <div class="thumb" aria-hidden="true">
+          <div class="thumb-top">MagicSchool · NotebookLM</div>
+          <svg class="motif" viewBox="0 0 200 150">
+            <rect x="14" y="14" width="172" height="120" rx="6"/>
+            <line x1="14" y1="34" x2="186" y2="34"/>
+            <circle class="f" cx="26" cy="24" r="2.6"/><circle class="f" cx="36" cy="24" r="2.6"/><circle class="f" cx="46" cy="24" r="2.6"/>
+            <text x="24" y="56">&gt;</text>
+            <line x1="36" y1="53" x2="128" y2="53"/>
+            <line class="d soft" x1="36" y1="69" x2="160" y2="69"/>
+            <line class="d soft" x1="36" y1="83" x2="112" y2="83"/>
+            <rect x="72" y="98" width="100" height="24" rx="4"/>
+            <line class="soft" x1="82" y1="110" x2="150" y2="110"/>
+            <rect class="f blink" x="26" y="102" width="7" height="13"/>
+            <path class="f" d="M168 46 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z"/>
+          </svg>
+          <div class="thumb-word"><span lang="pt-PT">O aluno pilota, a IA <i>copilota</i></span><span lang="en-GB">Student as pilot, AI as <i>co-pilot</i></span></div>
+          <div class="thumb-bot"><span lang="pt-PT">IA generativa · Pensamento crítico</span><span lang="en-GB">Generative AI · Critical thinking</span></div>
+        </div>
+        <div class="card-body">
+          <p class="meta"><b>04</b> / <span lang="pt-PT">Formação contínua · Investigação</span><span lang="en-GB">Teacher CPD · Research</span></p>
+          <h3><span lang="pt-PT">Inteligência artificial generativa com pensamento crítico</span><span lang="en-GB">Generative AI with critical thinking</span></h3>
+          <p lang="pt-PT">Formação sobre, para e com IA destinada a professores do ensino básico e secundário, num modelo de desenvolvimento profissional em regime misto apresentado na EDEN 2026. No Instituto Piaget, coordena os Laboratórios de Valorização e Desenvolvimento Profissional dedicados à IA e ao pensamento crítico. Em 2026 representou a instituição na assinatura da Declaração de Coimbra sobre Educação Digital e IA para o Bem Comum.</p>
+          <p lang="en-GB">Training about, for and with AI for primary and secondary school teachers, in a blended professional development model presented at EDEN 2026. At Instituto Piaget, he coordinates the Professional Development Labs on AI and critical thinking. In 2026 he represented the institution at the signing of the Coimbra Declaration on Digital Education and AI for the Common Good.</p>
+          <ul class="tags"><li>MagicSchool AI Certified Trainer</li><li>CrithinkNet</li><li>EDEN 2026</li><li><span lang="pt-PT">Declaração de Coimbra</span><span lang="en-GB">Coimbra Declaration</span></li></ul>
+          <div class="card-links">
+            <a href="https://germinare.ipiaget.org/index.php/germinare/article/view/565/49" target="_blank" rel="noopener"><span lang="pt-PT">Artigo na Germinare ↗</span><span lang="en-GB">Article in Germinare ↗</span></a>
+            <a href="https://doi.org/10.5334/uproc.276" target="_blank" rel="noopener"><span lang="pt-PT">Atas da EDEN 2026 ↗</span><span lang="en-GB">EDEN 2026 proceedings ↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 05 Fute_mática -->
+      <article class="card" id="p-futematica">
+        <div class="thumb" aria-hidden="true">
+          <div class="thumb-top">INSIGHT · FPF · 2022 → 2030</div>
+          <svg class="motif" viewBox="0 0 200 150">
+            <text x="12" y="14">y = ax² + bx + c</text>
+            <g class="soft">
+              <rect x="10" y="22" width="180" height="112"/>
+              <line x1="100" y1="22" x2="100" y2="134"/>
+              <circle cx="100" cy="78" r="18"/>
+              <rect x="10" y="52" width="24" height="52"/><rect x="166" y="52" width="24" height="52"/>
+            </g>
+            <path class="d w" d="M40 120 Q100 -20 160 120"/>
+            <circle class="f" cx="40" cy="120" r="4"/>
+            <path d="M58 120 A18 18 0 0 0 47 103.4"/>
+            <text x="61" y="112">θ</text>
+          </svg>
+          <div class="thumb-word"><span lang="pt-PT">Matemática em <i>jogo</i></span><span lang="en-GB">Mathematics in <i>play</i></span></div>
+          <div class="thumb-bot"><span lang="pt-PT">3 livros · RM8 · ICMET 2024</span><span lang="en-GB">3 books · RM8 · ICMET 2024</span></div>
+        </div>
+        <div class="card-body">
+          <p class="meta"><b>05</b> / <span lang="pt-PT">Projeto · Matemática recreativa</span><span lang="en-GB">Project · Recreational mathematics</span></p>
+          <h3>Fute_mática</h3>
+          <p lang="pt-PT">Matemática através do futebol, com Hélder Pinto, Alcina Figueiroa e Ângelo Silva. O projeto deu origem aos livros «Vamos marcar um golo na Matemática?» e «Não Fiques Fora de Jogo na Matemática», e a «A Matemática do nosso Mundial», no prelo pela Federação Portuguesa de Futebol. Em 2026, a equipa publicou o artigo «Vamos jogar futebol! Ou vamos estudar matemática?» na revista Indagatio Didactica.</p>
+          <p lang="en-GB">Mathematics through football, with Hélder Pinto, Alcina Figueiroa and Ângelo Silva. The project has produced the books “Vamos marcar um golo na Matemática?” and “Não Fiques Fora de Jogo na Matemática”, with “A Matemática do nosso Mundial” in press with the Portuguese Football Federation. In 2026 the team published the article “Vamos jogar futebol! Ou vamos estudar matemática?” in the journal Indagatio Didactica.</p>
+          <ul class="tags"><li><span lang="pt-PT">Livros</span><span lang="en-GB">Books</span></li><li>Recreational Mathematics Colloquium 8</li><li>Indagatio Didactica</li></ul>
+          <div class="card-links">
+            <a href="https://doi.org/10.34624/01f2t010" target="_blank" rel="noopener"><span lang="pt-PT">Artigo na Indagatio Didactica ↗</span><span lang="en-GB">Article in Indagatio Didactica ↗</span></a>
+            <a href="#cv" data-tab="research"><span lang="pt-PT">Ver publicações ↓</span><span lang="en-GB">See publications ↓</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 06 Pedagogia XXI -->
+      <article class="card" id="p-spaces">
+        <div class="thumb" aria-hidden="true">
+          <div class="thumb-top">Pedagogia XXI · DigiPedES-XXI</div>
+          <svg class="motif" viewBox="0 0 200 150">
+            <rect class="w" x="12" y="12" width="176" height="118"/>
+            <line class="w" x1="72" y1="19" x2="128" y2="19"/>
+            <path class="soft" d="M150 130 A22 22 0 0 1 172 108"/><line class="soft" x1="172" y1="130" x2="172" y2="108"/>
+            <circle cx="52" cy="56" r="13"/><circle cx="100" cy="82" r="13"/><circle cx="148" cy="56" r="13"/><circle cx="56" cy="104" r="11"/>
+            <g class="f">
+              <circle cx="52" cy="37" r="2.6"/><circle cx="52" cy="75" r="2.6"/><circle cx="33" cy="56" r="2.6"/><circle cx="71" cy="56" r="2.6"/>
+              <circle cx="100" cy="63" r="2.6"/><circle cx="100" cy="101" r="2.6"/><circle cx="81" cy="82" r="2.6"/><circle cx="119" cy="82" r="2.6"/>
+              <circle cx="148" cy="37" r="2.6"/><circle cx="148" cy="75" r="2.6"/><circle cx="129" cy="56" r="2.6"/><circle cx="167" cy="56" r="2.6"/>
+              <circle cx="40" cy="104" r="2.4"/><circle cx="72" cy="104" r="2.4"/>
+            </g>
+            <g class="soft"><line x1="12" y1="143" x2="188" y2="143"/><line x1="12" y1="139" x2="12" y2="147"/><line x1="188" y1="139" x2="188" y2="147"/></g>
+          </svg>
+          <div class="thumb-word"><span lang="pt-PT">A sala como <i>ferramenta</i></span><span lang="en-GB">The room as a <i>tool</i></span></div>
+          <div class="thumb-bot"><span lang="pt-PT">Espaços flexíveis · Ensino superior</span><span lang="en-GB">Flexible spaces · Higher education</span></div>
+        </div>
+        <div class="card-body">
+          <p class="meta"><b>06</b> / <span lang="pt-PT">Inovação pedagógica · Ensino superior</span><span lang="en-GB">Pedagogical innovation · Higher education</span></p>
+          <h3><span lang="pt-PT">Pedagogia XXI e espaços de aprendizagem flexíveis</span><span lang="en-GB">Pedagogia XXI and flexible learning spaces</span></h3>
+          <p lang="pt-PT">Coordenação executiva do Projeto Pedagogia XXI no Instituto Piaget, com capacitação digital e pedagógica de docentes, aprendizagem cooperativa e salas redesenhadas para aulas centradas no estudante. Em 2026 integrou a missão do CNIPES ao KTH Royal Institute of Technology, em Estocolmo, e escreveu o capítulo sobre o laboratório de IA e pensamento crítico no livro dedicado aos Laboratórios de Valorização e Desenvolvimento Profissional do Pedagogia XXI.</p>
+          <p lang="en-GB">Executive coordination of the Pedagogia XXI project at Instituto Piaget, with digital and pedagogical capacity-building for lecturers, cooperative learning and rooms redesigned for student-centred teaching. In 2026 he joined the CNIPES mission to KTH Royal Institute of Technology in Stockholm and wrote the chapter on the AI and critical thinking lab in the book on the Pedagogia XXI Professional Development Labs.</p>
+          <ul class="tags"><li><span lang="pt-PT">Aprendizagem cooperativa</span><span lang="en-GB">Cooperative learning</span></li><li>Supera-te</li><li>CNIPES</li></ul>
+          <div class="card-links">
+            <a href="#cv" data-tab="practice"><span lang="pt-PT">Ver no percurso ↓</span><span lang="en-GB">See in the CV ↓</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 07 Digital wellbeing -->
+      <article class="card" id="p-wellbeing">
+        <div class="thumb" aria-hidden="true">
+          <div class="thumb-top">DGE · MECI · 2025</div>
+          <svg class="motif" viewBox="0 0 200 150">
+            <line x1="100" y1="40" x2="100" y2="124"/>
+            <path d="M70 128 H130"/><path d="M88 128 L100 116 L112 128"/>
+            <line class="w" x1="36" y1="40" x2="164" y2="40"/>
+            <circle class="f" cx="100" cy="40" r="4.5"/>
+            <g class="soft"><line x1="40" y1="40" x2="22" y2="88"/><line x1="40" y1="40" x2="58" y2="88"/><line x1="160" y1="40" x2="142" y2="88"/><line x1="160" y1="40" x2="178" y2="88"/></g>
+            <path d="M18 88 Q40 104 62 88 Z"/><path d="M138 88 Q160 104 182 88 Z"/>
+            <rect x="32" y="62" width="16" height="24" rx="2.5"/><line x1="37" y1="82" x2="43" y2="82"/>
+            <path d="M160 86 C146 76 150 62 160 70 C170 62 174 76 160 86 Z"/>
+          </svg>
+          <div class="thumb-word"><span lang="pt-PT">Equilíbrio <i>digital</i></span><span lang="en-GB">Digital <i>balance</i></span></div>
+          <div class="thumb-bot"><span lang="pt-PT">Bem-estar digital · Escolas</span><span lang="en-GB">Digital wellbeing · Schools</span></div>
+        </div>
+        <div class="card-body">
+          <p class="meta"><b>07</b> / <span lang="pt-PT">Política educativa · Direção-Geral da Educação</span><span lang="en-GB">Education policy · Directorate-General for Education</span></p>
+          <h3><span lang="pt-PT">Bem-estar digital nas escolas</span><span lang="en-GB">Digital wellbeing in schools</span></h3>
+          <p lang="pt-PT">Coautor das «Recomendações para a Promoção do Bem-Estar Digital nas Escolas», publicadas pela Direção-Geral da Educação em 2025 para apoiar a comunidade educativa numa utilização equilibrada das tecnologias digitais. O documento foi apresentado a 800 participantes no seminário «Aprender Mais Agora», em Coimbra.</p>
+          <p lang="en-GB">Co-author of the “Recommendations for Promoting Digital Wellbeing in Schools”, published by the Portuguese Directorate-General for Education in 2025 to help school communities use digital technology in a balanced way. The document was presented to 800 participants at the “Aprender Mais Agora” seminar in Coimbra.</p>
+          <ul class="tags"><li>DGE</li><li>SeguraNet</li><li><span lang="pt-PT">Cidadania digital</span><span lang="en-GB">Digital citizenship</span></li></ul>
+          <div class="card-links">
+            <a href="https://erte.dge.mec.pt/sites/default/files/doc/recomendacoes_bem_estar_digital.pdf" target="_blank" rel="noopener"><span lang="pt-PT">Ler as recomendações (PDF) ↗</span><span lang="en-GB">Read the recommendations (PDF) ↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 08 DigiSaúde -->
+      <article class="card" id="p-digisaude">
+        <div class="thumb" aria-hidden="true">
+          <div class="thumb-top"><span lang="pt-PT">Literacia digital em saúde</span><span lang="en-GB">Digital health literacy</span></div>
+          <svg class="motif" viewBox="0 0 200 150">
+            <circle cx="38" cy="50" r="11"/><path d="M18 86 Q38 62 58 86"/>
+            <circle cx="164" cy="58" r="8.5"/><path d="M149 86 Q164 70 179 86"/>
+            <path class="w" d="M8 104 H72 L80 104 L88 76 L98 132 L108 50 L118 116 L126 104 H192"/>
+            <g class="soft d"><line x1="38" y1="92" x2="38" y2="104"/><line x1="164" y1="92" x2="164" y2="104"/></g>
+          </svg>
+          <div class="thumb-word"><span lang="pt-PT">Gerações <i>ligadas</i></span><span lang="en-GB">Generations <i>connected</i></span></div>
+          <div class="thumb-bot"><span lang="pt-PT">Idosos · Jovens · Comunidade</span><span lang="en-GB">Older adults · Young people · Community</span></div>
+        </div>
+        <div class="card-body">
+          <p class="meta"><b>08</b> / <span lang="pt-PT">Projeto intergeracional · Saúde digital</span><span lang="en-GB">Intergenerational project · Digital health</span></p>
+          <h3>DigiSaúde</h3>
+          <p lang="pt-PT">Projeto intergeracional de promoção da literacia digital em saúde junto de idosos. Os resultados, incluindo a perspetiva dos técnicos das instituições comunitárias, foram apresentados em conferências internacionais de gerontologia e geriatria em 2025.</p>
+          <p lang="en-GB">An intergenerational project promoting digital health literacy among older adults. Its results, including the perspective of staff at community institutions, were presented at international gerontology and geriatrics conferences in 2025.</p>
+          <ul class="tags"><li><span lang="pt-PT">Saúde digital</span><span lang="en-GB">Digital health</span></li><li><span lang="pt-PT">Gerontologia</span><span lang="en-GB">Gerontology</span></li><li>Ourense 2025</li></ul>
+          <div class="card-links">
+            <a href="#cv" data-tab="research"><span lang="pt-PT">Ver no percurso ↓</span><span lang="en-GB">See in the CV ↓</span></a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ARCHIVE -->
+<section class="section" id="lab" style="padding-top:0">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker"><span lang="pt-PT">02 / Arquivo aberto</span><span lang="en-GB">02 / Open archive</span></p>
+      <h2 lang="pt-PT">Evidência que se pode <em>abrir</em>.</h2>
+      <h2 lang="en-GB">Evidence you can <em>open</em>.</h2>
+      <p class="sec-lede" lang="pt-PT">Publicações, relatórios e recomendações disponíveis em linha, do vídeo educativo à inteligência artificial.</p>
+      <p class="sec-lede" lang="en-GB">Publications, reports and recommendations available online, from educational video to artificial intelligence.</p>
+    </header>
+    <div class="stats">
+      <div class="stat"><b>17</b><span lang="pt-PT">Documentos em linha</span><span lang="en-GB">Documents online</span></div>
+      <div class="stat"><b>2013–2027</b><span lang="pt-PT">Período coberto</span><span lang="en-GB">Period covered</span></div>
+    </div>
+    <div class="docs">
+      <a class="doc" href="https://doi.org/10.4018/979-8-3373-8735-2.ch015" target="_blank" rel="noopener"><span class="doc-n">01</span><span><span class="doc-title">Virtual reality and augmented reality in teacher training: Redefining pedagogical practices in higher education</span><span class="doc-meta"><span lang="pt-PT">Capítulo · 2027 · IGI Global</span><span lang="en-GB">Book chapter · 2027 · IGI Global</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+      <a class="doc" href="https://doi.org/10.1109/ISEMV71888.2026.00020" target="_blank" rel="noopener"><span class="doc-n">02</span><span><span class="doc-title">Designing for Immersion: Story-Driven Gamification in FrameVR as a Pedagogy for Initial Teacher Education</span><span class="doc-meta"><span lang="pt-PT">Comunicação · 2026 · IEEE ISEMV, Larnaca</span><span lang="en-GB">Conference paper · 2026 · IEEE ISEMV, Larnaca</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+      <a class="doc" href="https://doi.org/10.5334/uproc.276" target="_blank" rel="noopener"><span class="doc-n">03</span><span><span class="doc-title">Reconfiguring to Teach: Pedagogical Responses to the Integration of Artificial Intelligence in Teacher Professional Development</span><span class="doc-meta"><span lang="pt-PT">Comunicação · 2026 · EDEN 2026, Porto</span><span lang="en-GB">Conference paper · 2026 · EDEN 2026, Porto</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+      <a class="doc" href="https://doi.org/10.34630/cip.vi.7683" target="_blank" rel="noopener"><span class="doc-n">04</span><span><span class="doc-title">Virtual Reality and Augmented Reality in Teacher Training: Redefining Pedagogical Practices in Higher Education</span><span class="doc-meta"><span lang="pt-PT">Comunicação · 2026 · IDEAS’26, Porto</span><span lang="en-GB">Conference paper · 2026 · IDEAS’26, Porto</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+      <a class="doc" href="https://doi.org/10.34624/01f2t010" target="_blank" rel="noopener"><span class="doc-n">05</span><span><span class="doc-title">Vamos jogar futebol! Ou vamos estudar matemática?</span><span class="doc-meta"><span lang="pt-PT">Artigo · 2026 · Indagatio Didactica 18(3)</span><span lang="en-GB">Journal article · 2026 · Indagatio Didactica 18(3)</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+      <a class="doc" href="https://doi.org/10.1007/978-981-95-8852-7" target="_blank" rel="noopener"><span class="doc-n">06</span><span><span class="doc-title">Empowering Teachers to Integrate Virtual Reality in Education</span><span class="doc-meta"><span lang="pt-PT">Capítulo · 2026 · Springer Singapore</span><span lang="en-GB">Book chapter · 2026 · Springer Singapore</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+      <a class="doc" href="https://www.ipiaget.org/revista-piaget/" target="_blank" rel="noopener"><span class="doc-n">07</span><span><span class="doc-title">Inteligência Artificial no novo ano letivo</span><span class="doc-meta"><span lang="pt-PT">Artigo · 2026 · Revista Piaget 14</span><span lang="en-GB">Magazine article · 2026 · Revista Piaget 14</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+      <a class="doc" href="https://op.europa.eu/en/publication-detail/-/publication/efa878de-6ea9-11f1-ae88-01aa75ed71a1/language-en" target="_blank" rel="noopener"><span class="doc-n">08</span><span><span class="doc-title">Advancing digital education for every learner: innovative practices from the EU</span><span class="doc-meta"><span lang="pt-PT">Relatório europeu · 2026 · Serviço das Publicações da UE</span><span lang="en-GB">EU report · 2026 · Publications Office of the EU</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+      <a class="doc" href="https://germinare.ipiaget.org/index.php/germinare/article/view/565/49" target="_blank" rel="noopener"><span class="doc-n">09</span><span><span class="doc-title">Reconfiguring pedagogy in the age of generative AI: a blended continuing professional development programme for basic and secondary school teachers</span><span class="doc-meta"><span lang="pt-PT">Artigo · 2026 · Germinare 6</span><span lang="en-GB">Journal article · 2026 · Germinare 6</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+      <a class="doc" href="https://erte.dge.mec.pt/sites/default/files/doc/recomendacoes_bem_estar_digital.pdf" target="_blank" rel="noopener"><span class="doc-n">10</span><span><span class="doc-title">Recomendações para a Promoção do Bem-Estar Digital nas Escolas</span><span class="doc-meta"><span lang="pt-PT">Recomendações · 2025 · Direção-Geral da Educação</span><span lang="en-GB">Policy guidance · 2025 · Directorate-General for Education</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+      <a class="doc" href="https://doi.org/10.1007/978-3-031-80475-5_33" target="_blank" rel="noopener"><span class="doc-n">11</span><span><span class="doc-title">Immersive Virtual Learning Spaces for Emotional Engagement in Education with the Classroom-Ready Virtual Reality Device CLASS VR</span><span class="doc-meta"><span lang="pt-PT">Capítulo · 2025 · Springer Nature (iLRN)</span><span lang="en-GB">Book chapter · 2025 · Springer Nature (iLRN)</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+      <a class="doc" href="https://hdl.handle.net/1822/92008" target="_blank" rel="noopener"><span class="doc-n">12</span><span><span class="doc-title">Capacitação de professores para usar a realidade virtual na educação: o CLASSVR como tecnologia emocional e cognitiva</span><span class="doc-meta"><span lang="pt-PT">Comunicação · 2024 · RepositóriUM</span><span lang="en-GB">Conference paper · 2024 · RepositóriUM</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+      <a class="doc" href="https://hdl.handle.net/1822/74001" target="_blank" rel="noopener"><span class="doc-n">13</span><span><span class="doc-title">Atividades matemáticas com robôs para o desenvolvimento do pensamento computacional em alunos do 1.º ano do 1.º CEB</span><span class="doc-meta"><span lang="pt-PT">Comunicação · 2021 · RepositóriUM</span><span lang="en-GB">Conference paper · 2021 · RepositóriUM</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+      <a class="doc" href="https://hdl.handle.net/1822/43371" target="_blank" rel="noopener"><span class="doc-n">14</span><span><span class="doc-title">A edição de vídeo na resolução de threshold concepts: um estudo utilizando tecnologias móveis</span><span class="doc-meta"><span lang="pt-PT">Proposta de investigação · 2016 · RepositóriUM</span><span lang="en-GB">Research proposal · 2016 · RepositóriUM</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+      <a class="doc" href="https://doi.org/10.5220/0005450403340340" target="_blank" rel="noopener"><span class="doc-n">15</span><span><span class="doc-title">A Video Competition to Promote Informal Engagement with Pedagogical Topics in a School Community</span><span class="doc-meta"><span lang="pt-PT">Comunicação · 2015 · CSEDU, Lisboa</span><span lang="en-GB">Conference paper · 2015 · CSEDU, Lisbon</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+      <a class="doc" href="https://hdl.handle.net/1822/32612" target="_blank" rel="noopener"><span class="doc-n">16</span><span><span class="doc-title">Práticas educativas com a edição de vídeo: motivar com criatividade</span><span class="doc-meta"><span lang="pt-PT">Comunicação · 2014 · RepositóriUM</span><span lang="en-GB">Conference paper · 2014 · RepositóriUM</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+      <a class="doc" href="https://hdl.handle.net/1822/28692" target="_blank" rel="noopener"><span class="doc-n">17</span><span><span class="doc-title">Usabilidade e acessibilidade de protótipos multimédia educativos: estudo comparativo</span><span class="doc-meta"><span lang="pt-PT">Comunicação · 2013 · RepositóriUM</span><span lang="en-GB">Conference paper · 2013 · RepositóriUM</span></span></span><span class="doc-go" aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about" style="padding-top:0">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker"><span lang="pt-PT">03 / Sobre</span><span lang="en-GB">03 / About</span></p>
+      <h2 lang="pt-PT">Entre a sala de aula e a <em>investigação</em>.</h2>
+      <h2 lang="en-GB">Between the classroom and <em>research</em>.</h2>
+    </header>
+    <div class="about-grid">
+      <aside class="idcard">
+        <figure class="portrait"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAB7AHsDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwB6R1YSOlRKsIlZGlxEjqzHFSxp7VajjoC4iRVYSKnIlWUjoC4xIqlEYAycADqTUuFjRncgKoJJPYCuPu9blv7shAwtgflX1HqfeonNRVzWjSdWVkdJ9ttN5UOWKnkqpI/PvViGSG4GYnDY6joR+FYFnKjHaR+QzitGRY4mR4pCw9SpBFYKu92jtlgI2tF6ml5XtSGP2p1pcpcqFyPMAzj1Hr/L86sFK6E1JXR58oOEuVlMpTClXSlRslUTYplabtqyyVHtoEcwi1ZjSkjSrUaUAOjjqyiUkaVYRaAFRKsxpTEWrKCgDJ8SXMNrok8bzKksq4RS2CwBG7A74B5+teYHxALWZUWHAPHLDJ/CvQPHJzp9tESAGdjyO4H/ANevOJ/DNpLL5twFbcPlK53E1z1Wr2Z3YZSUbxOktvE0KwGYxDKHBA5rTh8T2d55e4NHngHbhQfrVSLw5Dc+F7a2lkmEcchZhG/Yj09s1n2XhOCzlL+dOLZlBWRLgMp/4CRzWDSO7mmrM7bT5dt9AVOVZyp/EH+uK6MrXH6Uotby1AQlWmUbVA5yNu4/ofwxXaEc100fhPOxd+e7ICtRstWSKYRWhylR0qPbVphUJXmgDnY0q2iVHGtWUWrEPRamUU1RUyikA9BU6CokFWFoA5Xx6mNLtpv7su38xn+lebanMYAo8wJcEcMXxgfj1r2PxFb2lzoF1HeXENtCF3efMwVUIPBJPA54/GvILW2OoTNLhGYALljkAdqwqR1udmHqWXKTeHbzUJZ1a41ZYIVIJRXQtIPzOK6CxeWG7kiWd5bRv3kQ7AE8j8KbpmhgR/vrXTXXHAECFvzxUcky6bdNYwohjOXCLx5ee3sPSsWk3odznyLc6zRYxcalFk8Ivme/BGP1NdYa5XwZeQXQvljcPJEUV8HO3O7j/P8ASupJrohHlR5lepzyA0w06mmrMSJhUR61MxqI9aAMWNasIKjQVOoqyR6ipVFNUVFf39rpNhNfXsyw20K7pJG6AdO3XkgUgLi8U+RGlgdElaJ2UgSIAShxwRkEZHuCK8p174uqqBdBt8gg7p7lP/QVB/U/lXnWp+NvEWtKY7vVLhomONiN5anp1C4B/KqUGFzV8b2PiS68XxaFquunUYg2Y3VlCqACSWjXhXAzkHnp2Iq5bApZxPZs6hUCDJG4YGOeOvFcZpGtDTNZjuSheCNSjIDglTwSPfv+FdtaxA3BNuji3lHnbmX7gYnIPvnPGf8AGlUi7aGlGSTdyWHW9Wjxb27BpZSEQBMuSeBjHf2xWPr8l5pZzqGpiK8lCkW4bfIg65cD7h9jz7Cr2qeIbrQdqaP/AKNclTmUf6whlxknsOcgDHbrjNcna6BPeSG5v52DOdzAnLMT6k96qNKy1FOrd6HVeCta1DQrhr6yjQh42Rhcksr5IOcAg9u9ey6D4z03WkSKSRba8wA0UhwGPT5T357dfavExiKNYowMKMD2qaKRkXAbAHJYmrlC5kpH0RTTXhdj4+1TS2CW1w80YP3ZjlD+fP5Yr1Xwn4mXxPpTTtB5FxEwSZAcqTjqp9D/AEP1rGUGtS07m21RHrUjGoz1rO5RmIKsIKhQVODgVqZkgwK8l+LPiG3v5rXw7bOJHjl864ZTwhAIC/Xk59OK9I1jVodH0q5v7g/u4ULEZxk9APqTgfjXzel3Lfa3c3c5BmmZ5HwMcs2Tj86uEdbibJpLbcMY46VBBZZRwf73+FajriIN2HNNhXamO/U/U1tYlMwLiweG9WMr8snAPpmvd9Qg07w34ShvrtRLKQPIhxzJIR8o+nGT16fhXnOn6Udb1Wws/l3PKvzdCADknP0Bq/4r1oa7r8jxMPsFpmG0QfdCjALD/ex+WBQtBPUyAJb29kvbx99xK29zjgegH0HAqcvz1wKhVmCkDgdzTdw/AfrSuMspyRWVf6i08rW1rzGv3nA4zTNUvTHEsCsQ0n3iOy9/zqjCPkA2MR2LHav4CmNIsRQqGy2Wb1Y16n8Jrtk1G+s84SSESY91IA/RjXl8XXnYPpXoPwtBPidiOgt3J/QVNRe6xrc9hc4qItzT3NQE81yGpVVsClL8ZqAN3ri/HnjFNFs2sbSdBqEwwTu/1K+v1Pb8/StkrsybOU+JPiZtQ1R9Mtrkmzt/lkVeA0mec+uOB+Brg7R1F4uTgMNoP4iopXdvn8yPHsDUMkgAV1I3KwPFb2SRJ0UT77VFfnkgnPXB/wD1VKgUsMg4+prFgvCxt+gCqQeeprRhlZSzvjYBkkHpTEbNhfDTUvL2PcJUi8mEjJ2ySfLn/vjzPxxVAFUAVScCq7TM0UaY4LGQ4HfoAfXoT+NIJOcdCRnkUAWzLvOAePTHSozJk4yABVdpwq4HTufWqtxMfs5Vfvv8opWHcj3m4uXmY4BOF+g6VMoX8fXGaqRuIV2sNp9PvE/lU6zlvuwyt+AH86YFuIAHgmvSPhSv/E8u2z0tSB/30teZxTPuA+zOPcsK9N+F7BdVnGMZtmP/AI8tZz+FlLc9SkaoC3NK71CX5rlNTI1XVINI0q51C4z5VuhdgOp9APcnA/GvnS9u57+/nvZiTNO5d2OCSSc/5Ar2X4jSgeDLpS23c8f44YH+leHiQjnBx2A/rXVBGLLlhpl5qd9Fa2kJeaQ4BUbce5PTFd63hTwx4VtFl8QFtSvpk+S2iYxqPfgg+2Sfwrm/Buu2uj6/FcXnETKY2JH3c9/0p/jvUJLrxW11G4e2mijMDA5GwDHH45/OompOfLsjWLShzWuyvrFvpN1cJLpFnJp6YIaJpjKPqCeR+tZ5jmt7WXzG3ZIO4c9KDc5XGeaEuREpJOea2UbKyMm76j1lIZvmYjPykjHA4qdZ9tsCxzk5qJykrlW3YZezVF+7kjKMOYhnA4yKdiWiGa7Ej5CqqjqQME1F+9uiNhVVU4BLDI/DrVpks0LDyQQFUnLHuetI0KBi0CqkqsSB2YelDGhYMW42iVT65q0sqnkuPwFRxSRzxhwuCOCD1Bp6KuduBilcotRFWIxzXr/w80v7Ho738mN91gJ6hFJ/mc/kK8itwoILfdHJr6AsYRZ6ba2yjAiiVfxA5rKq9LDjuWXeoS3NIz1CX5rAs5Txdpja3oU1nGwEoIdM9Cw7H9a8MuLea0uHimRo5EOGUjBBr6AuScH61538RbWAR2dyIlEzsys46kADGa3hLWxm0efuTs+Y/QVH5j7FQsSqnIXPAND/AHzTDVzEieOcrwRkUjyc5B4PWoaWmpOwWL0MvnRBQcSoOP8AaHpTTMVKSjqvysPaqikqwIOCKnn6q3dlyfemndBYnlKmVefkkXbn0piO4XbnEiGo0ObRs/wkEe1SdWVj1x1pruFia1n/AH75XaW5IrQX73BrNiA83PfFaEXY+2aTGbfhq4t08V6ZBcRF0aZTgH+LPy/kcGvcnevA/CP7zWNKd/mb7YvJ/wB8V7s5rCpuUhGembqRqZmsxn//2Q==" width="112" height="112" alt="Retrato de Celestino Magalhães" data-alt-pt="Retrato de Celestino Magalhães" data-alt-en="Portrait of Celestino Magalhães"></figure>
+        <h3>Celestino Magalhães</h3>
+        <p class="role"><span lang="pt-PT">Professor Adjunto · Instituto Piaget</span><span lang="en-GB">Assistant Professor · Instituto Piaget</span></p>
+        <dl class="ids">
+          <div><dt>ORCID</dt><dd><a href="https://orcid.org/0000-0001-8933-2594" target="_blank" rel="noopener">0000-0001-8933-2594 ↗</a></dd></div>
+          <div><dt>Ciência ID</dt><dd><a href="https://www.cienciavitae.pt/0E19-A634-A97C" target="_blank" rel="noopener">0E19-A634-A97C ↗</a></dd></div>
+          <div><dt><span lang="pt-PT">Nome de citação</span><span lang="en-GB">Citation name</span></dt><dd>Magalhães, Celestino</dd></div>
+          <div><dt><span lang="pt-PT">Centro de investigação</span><span lang="en-GB">Research centre</span></dt><dd>INSIGHT · Piaget</dd></div>
+        </dl>
+      </aside>
+      <div>
+        <div class="bio" lang="pt-PT">
+          <p>Celestino Magalhães é Professor Adjunto no Instituto Piaget, em Vila Nova de Gaia, onde forma futuros professores na Licenciatura em Educação Básica e no Mestrado em Ensino de Matemática e Ciências Naturais no 2.º Ciclo do Ensino Básico.</p>
+          <p>Coordena a Pós-Graduação em TIC e é investigador do INSIGHT – Piaget Research Center for Ecological Human Development. Entre 2014 e 2026 foi investigador do Centro de Investigação em Educação (CIEd) da Universidade do Minho. Frequenta o Doutoramento em Ciências da Educação, na especialidade de Tecnologia Educativa, na Universidade de Salamanca.</p>
+          <p>Profissionalizado em Matemática e Ciências Naturais (grupo 230), passou quase três décadas no ensino básico e secundário antes de se dedicar a tempo inteiro ao ensino superior. Dessa experiência vem a pergunta que orienta o seu trabalho. O que muda, de facto, na aprendizagem dos alunos quando a tecnologia entra na aula com intenção pedagógica?</p>
+          <p>É mestre em Sistemas de Informação, com especialização em Inteligência Artificial, e em Tecnologias da Informação e da Comunicação. É formador acreditado pelo CCPFC e participa em redes europeias de educação digital.</p>
+        </div>
+        <div class="bio" lang="en-GB">
+          <p>Celestino Magalhães is an Assistant Professor at Instituto Piaget in Vila Nova de Gaia, Portugal, where he prepares future teachers on the undergraduate degree in Basic Education and the Master’s in Teaching Mathematics and Natural Sciences for upper primary school.</p>
+          <p>He coordinates the Postgraduate Programme in ICT and is a researcher at INSIGHT – Piaget Research Center for Ecological Human Development. From 2014 to 2026 he was a researcher at the Research Centre on Education (CIEd), University of Minho. He is completing a PhD in Educational Sciences, specialising in Educational Technology, at the University of Salamanca.</p>
+          <p>A qualified teacher of Mathematics and Natural Sciences, he spent almost three decades in primary and secondary schools before moving full-time into higher education. That experience shapes the question behind his work. What really changes in students’ learning when technology enters the classroom with clear pedagogical intent?</p>
+          <p>He holds master’s degrees in Information Systems, specialising in Artificial Intelligence, and in Information and Communication Technologies. He is a trainer accredited by Portugal’s Scientific-Pedagogical Council for Continuing Education (CCPFC) and is active in European digital education networks.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skill"><h4><span lang="pt-PT">Tecnologias imersivas</span><span lang="en-GB">Immersive technologies</span></h4><p>ClassVR · FrameVR.io · Delightex Edu · ARloopa · 3DBear</p></div>
+          <div class="skill"><h4><span lang="pt-PT">Robótica educativa</span><span lang="en-GB">Educational robotics</span></h4><p>LEGO SPIKE · VinciBot · Tale-Bot Pro · Bee-Bot · KIBO</p></div>
+          <div class="skill"><h4><span lang="pt-PT">IA na educação</span><span lang="en-GB">AI in education</span></h4><p>MagicSchool · NotebookLM · ChatGPT</p></div>
+          <div class="skill"><h4><span lang="pt-PT">Metodologias</span><span lang="en-GB">Methods</span></h4><p lang="pt-PT">Aprendizagem cooperativa · Design Thinking · Sala de aula invertida · Gamificação</p><p lang="en-GB">Cooperative learning · Design Thinking · Flipped learning · Gamification</p></div>
+          <div class="skill"><h4><span lang="pt-PT">Enquadramentos</span><span lang="en-GB">Frameworks</span></h4><p lang="pt-PT">TPACK · DigCompEdu · Construcionismo · CAMIL</p><p lang="en-GB">TPACK · DigCompEdu · Constructionism · CAMIL</p></div>
+          <div class="skill"><h4><span lang="pt-PT">Línguas</span><span lang="en-GB">Languages</span></h4><p lang="pt-PT">Português · Inglês · Espanhol · Francês</p><p lang="en-GB">Portuguese · English · Spanish · French</p></div>
+        </div>
+
+        <div class="networks">
+          <span class="lab"><span lang="pt-PT">Redes</span><span lang="en-GB">Networks</span></span>
+          <span class="pill">European Digital Education Hub</span>
+          <span class="pill">Science on Stage</span>
+          <span class="pill"><span lang="pt-PT">Google Educator Group Portugal · Líder</span><span lang="en-GB">Google Educator Group Portugal · Leader</span></span>
+          <span class="pill">Bett · Virtual Ambassador</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PATTERN -->
+<section class="pattern" aria-labelledby="patternTitle">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker"><span lang="pt-PT">Um padrão ao longo do percurso</span><span lang="en-GB">A pattern across the work</span></p>
+      <h2 id="patternTitle"><span lang="pt-PT">O professor como <em>construtor</em> de aprendizagem.</span><span lang="en-GB">The teacher as a <em>builder</em> of learning.</span></h2>
+      <p class="sec-lede" lang="pt-PT">Nas oficinas, nas unidades curriculares e nos projetos, o método repete-se. A tecnologia deixa de ser apenas uma ferramenta e passa a ser um objeto para pensar, na linha do construcionismo de Seymour Papert.</p>
+      <p class="sec-lede" lang="en-GB">In workshops, university courses and projects, the method repeats. Technology stops being just a tool and becomes an object to think with, in the tradition of Seymour Papert’s constructionism.</p>
+    </header>
+    <ol class="steps">
+      <li class="step"><span class="n"><span lang="pt-PT">01 / Experimentar</span><span lang="en-GB">01 / Experience</span></span><b><span lang="pt-PT">Primeiro, como aprendentes.</span><span lang="en-GB">First, as learners.</span></b><p lang="pt-PT">Os professores vivem a tecnologia do lado do aluno antes de a levarem para a aula.</p><p lang="en-GB">Teachers meet the technology from the student’s side before taking it into class.</p></li>
+      <li class="step"><span class="n"><span lang="pt-PT">02 / Construir</span><span lang="en-GB">02 / Build</span></span><b><span lang="pt-PT">Depois, como autores.</span><span lang="en-GB">Then, as authors.</span></b><p lang="pt-PT">Desenham os seus próprios recursos, sejam cenas de RV, desafios com robôs ou tarefas com IA.</p><p lang="en-GB">They design their own resources, whether VR scenes, robot challenges or AI-supported tasks.</p></li>
+      <li class="step"><span class="n"><span lang="pt-PT">03 / Refletir</span><span lang="en-GB">03 / Reflect</span></span><b><span lang="pt-PT">Por fim, com evidência.</span><span lang="en-GB">Finally, with evidence.</span></b><p lang="pt-PT">Testam em sala de aula, recolhem dados e reformulam a partir do que observaram.</p><p lang="en-GB">They test in class, gather data and refine based on what they observed.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- CV -->
+<section class="section" id="cv">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker"><span lang="pt-PT">04 / CV interativo</span><span lang="en-GB">04 / Interactive CV</span></p>
+      <h2 lang="pt-PT">Explorar o trabalho. <em>Seguir</em> o percurso.</h2>
+      <h2 lang="en-GB">Explore the work. <em>Trace</em> the path.</h2>
+      <p class="sec-lede" lang="pt-PT">Alterne entre a docência e formação e o percurso de investigação. Abra cada entrada para ver o detalhe.</p>
+      <p class="sec-lede" lang="en-GB">Switch between teaching and training and the research path. Open any entry for the detail.</p>
+    </header>
+
+    <div class="tabs" role="tablist" data-aria-pt="Percursos do CV" data-aria-en="CV tracks" aria-label="Percursos do CV">
+      <button class="tab" role="tab" id="tab-practice" aria-controls="panel-practice" aria-selected="true" data-tab="practice"><small><span lang="pt-PT">01 / Prática</span><span lang="en-GB">01 / Practice</span></small><b><span lang="pt-PT">Docência e formação</span><span lang="en-GB">Teaching and training</span></b></button>
+      <button class="tab" role="tab" id="tab-research" aria-controls="panel-research" aria-selected="false" tabindex="-1" data-tab="research"><small><span lang="pt-PT">02 / Investigação</span><span lang="en-GB">02 / Research</span></small><b><span lang="pt-PT">Percurso académico</span><span lang="en-GB">Academic path</span></b></button>
+    </div>
+
+    <!-- Practice panel -->
+    <div class="panel" role="tabpanel" id="panel-practice" aria-labelledby="tab-practice">
+      <div class="panel-intro">
+        <p class="panel-kick"><span lang="pt-PT">Docência · Formação · Inovação</span><span lang="en-GB">Teaching · Training · Innovation</span></p>
+        <h3><span lang="pt-PT">Mais de trinta anos de sala de aula.</span><span lang="en-GB">More than thirty years in the classroom.</span></h3>
+        <p lang="pt-PT">Da Matemática e Ciências Naturais no ensino básico à formação inicial e contínua de professores no ensino superior.</p>
+        <p lang="en-GB">From Mathematics and Natural Sciences in primary and lower secondary school to initial and continuing teacher education in higher education.</p>
+        <ul class="chips">
+          <li>MagicSchool AI Certified Trainer</li>
+          <li>3DBear Ambassador &amp; Certified Educator</li>
+          <li>Nearpod Certified Educator</li>
+          <li>KIBO Ambassador</li>
+        </ul>
+        <div class="facts">
+          <div class="fact"><small><span lang="pt-PT">Primeiro ano letivo</span><span lang="en-GB">First school year</span></small><b>1994/95</b></div>
+          <div class="fact"><small><span lang="pt-PT">Formador acreditado</span><span lang="en-GB">Accredited trainer</span></small><b>CCPFC/RFO-27109/10</b></div>
+        </div>
+        <div class="plinks">
+          <a class="btn primary" href="https://www.cienciavitae.pt/0E19-A634-A97C" target="_blank" rel="noopener"><span lang="pt-PT">CV completo na Ciência Vitae ↗</span><span lang="en-GB">Full CV on Ciência Vitae ↗</span></a>
+          <a class="btn" href="https://orcid.org/0000-0001-8933-2594" target="_blank" rel="noopener"><span lang="pt-PT">Perfil ORCID ↗</span><span lang="en-GB">ORCID profile ↗</span></a>
+        </div>
+      </div>
+      <div>
+        <p class="entries-hint"><span lang="pt-PT">Selecione uma experiência ↙</span><span lang="en-GB">Select an experience ↙</span></p>
+        <div class="entries">
+          <details class="entry" open>
+            <summary><span class="r-when">2023 — <span lang="pt-PT">atual</span><span lang="en-GB">present</span></span><span class="r-what"><strong><span lang="pt-PT">Professor Adjunto</span><span lang="en-GB">Assistant Professor</span></strong><span class="sub">Instituto Piaget · Vila Nova de Gaia</span></span><span class="r-plus" aria-hidden="true">+</span></summary>
+            <div class="r-body">
+              <p lang="pt-PT">Leciona na formação inicial de professores, na Licenciatura em Educação Básica e no Mestrado em Ensino de Matemática e Ciências Naturais no 2.º CEB, em unidades curriculares como Tecnologias Digitais e Metodologias Ativas. Foi assistente convidado entre 2011 e 2023. Orientou e arguiu trabalhos finais sobre RV e RA, IA, Scratch e inclusão digital. Em outubro de 2026 representou o Instituto Piaget na assinatura da Declaração de Coimbra sobre Educação Digital e Inteligência Artificial para o Bem Comum e, de 25 a 30 de novembro, leciona «AI in Education» num Postgraduate Certificate da Menntavísindasvið, a Escola de Educação da Universidade da Islândia.</p>
+              <p lang="en-GB">Teaches in initial teacher education, on the Basic Education degree and the Master’s in Teaching Mathematics and Natural Sciences, in courses such as Digital Technologies and Active Methodologies. Invited assistant lecturer from 2011 to 2023. Has supervised and examined final projects on VR and AR, AI, Scratch and digital inclusion. In October 2026 he represented Instituto Piaget at the signing of the Coimbra Declaration on Digital Education and Artificial Intelligence for the Common Good, and from 25 to 30 November he teaches “AI in Education” on a Postgraduate Certificate at Menntavísindasvið, the School of Education of the University of Iceland.</p>
+            </div>
+          </details>
+          <details class="entry">
+            <summary><span class="r-when">2021 — <span lang="pt-PT">atual</span><span lang="en-GB">present</span></span><span class="r-what"><strong><span lang="pt-PT">Coordenador da Pós-Graduação em TIC</span><span lang="en-GB">Director, Postgraduate Programme in ICT</span></strong><span class="sub">Instituto Piaget</span></span><span class="r-plus" aria-hidden="true">+</span></summary>
+            <div class="r-body">
+              <p lang="pt-PT">Coordena a Pós-Graduação em TIC, cujos trabalhos finais aplicam tecnologias digitais a contextos educativos concretos, da Educação Física à Filosofia e à produção musical.</p>
+              <p lang="en-GB">Leads the Postgraduate Programme in ICT, whose final projects apply digital technologies to real teaching contexts, from Physical Education to Philosophy and music production.</p>
+            </div>
+          </details>
+          <details class="entry">
+            <summary><span class="r-when">2024 — 2026</span><span class="r-what"><strong><span lang="pt-PT">Coordenador executivo · Pedagogia XXI</span><span lang="en-GB">Executive coordinator · Pedagogia XXI</span></strong><span class="sub">Instituto Piaget · <span lang="pt-PT">Consórcio Pedagogia XXI</span><span lang="en-GB">Pedagogia XXI Consortium</span></span></span><span class="r-plus" aria-hidden="true">+</span></summary>
+            <div class="r-body">
+              <p lang="pt-PT">Capacitação digital e pedagógica de docentes do ensino superior, espaços de aprendizagem interativos e Laboratórios de Valorização e Desenvolvimento Profissional sobre IA e pensamento crítico. Participou na missão do CNIPES ao KTH (Estocolmo) e numa mobilidade Erasmus+ na Linnaeus University (Suécia), em 2026.</p>
+              <p lang="en-GB">Digital and pedagogical capacity-building for higher education lecturers, interactive learning spaces and Professional Development Labs on AI and critical thinking. In 2026 he took part in the CNIPES mission to KTH (Stockholm) and an Erasmus+ mobility at Linnaeus University (Sweden).</p>
+            </div>
+          </details>
+          <details class="entry">
+            <summary><span class="r-when">2010 — <span lang="pt-PT">atual</span><span lang="en-GB">present</span></span><span class="r-what"><strong><span lang="pt-PT">Formador</span><span lang="en-GB">Teacher trainer</span></strong><span class="sub"><span lang="pt-PT">Formador acreditado · CCPFC/RFO-27109/10</span><span lang="en-GB">Accredited trainer · CCPFC/RFO-27109/10</span></span></span><span class="r-plus" aria-hidden="true">+</span></summary>
+            <div class="r-body">
+              <p lang="pt-PT">Oficinas e ações de formação sobre RV e RA, inteligência artificial, robótica, bem-estar digital e aprendizagem cooperativa, para agrupamentos de escolas, centros de formação e congressos em Portugal, Espanha e Brasil. Em 2026 falou sobre IA responsável no 4.º Encontro Nacional de Entidades Formadoras (APEFOR, Viseu) e sobre metodologias ativas no Learning Innovation Summit da ATEC (Coimbra), e dinamizou uma sessão sobre o Gemini Notebook no 6.º Meetup GEG Noroeste (Oviedo).</p>
+              <p lang="en-GB">Workshops and training courses on VR and AR, artificial intelligence, robotics, digital wellbeing and cooperative learning for school clusters, teacher training centres and conferences in Portugal, Spain and Brazil. In 2026 he spoke on responsible AI at the 4th National Meeting of Training Providers (APEFOR, Viseu) and on active methodologies at the ATEC Learning Innovation Summit (Coimbra), and ran a session on Gemini Notebook at the 6th GEG Noroeste Meetup (Oviedo).</p>
+            </div>
+          </details>
+          <details class="entry">
+            <summary><span class="r-when">1994 — 2023</span><span class="r-what"><strong><span lang="pt-PT">Professor do ensino básico e secundário</span><span lang="en-GB">Primary and secondary school teacher</span></strong><span class="sub">Externato de Vila Meã · Colégio de Santa Eulália · Colégio Alfacoop</span></span><span class="r-plus" aria-hidden="true">+</span></summary>
+            <div class="r-body">
+              <p lang="pt-PT">Externato de Vila Meã (1994–2022), Colégio de Santa Eulália (2018–2021) e Colégio Alfacoop (2022–2023), onde continua a desenvolver o programa de robótica AlfaCreators.</p>
+              <p lang="en-GB">Externato de Vila Meã (1994–2022), Colégio de Santa Eulália (2018–2021) and Colégio Alfacoop (2022–2023), where he continues to develop the AlfaCreators robotics programme.</p>
+            </div>
+          </details>
+          <details class="entry">
+            <summary><span class="r-when">1998 — 2007</span><span class="r-what"><strong><span lang="pt-PT">Consultor de informática</span><span lang="en-GB">IT consultant</span></strong><span class="sub">Centro de Serviços e Apoio às Empresas · AEP</span></span><span class="r-plus" aria-hidden="true">+</span></summary>
+            <div class="r-body">
+              <p lang="pt-PT">Consultoria em sistemas de informação para empresas, em paralelo com a docência, e funções de consultor de ligação da Associação Empresarial de Portugal entre 2005 e 2007.</p>
+              <p lang="en-GB">Information systems consultancy for businesses alongside teaching, including a liaison consultant role with the Portuguese Business Association (AEP) from 2005 to 2007.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research panel -->
+    <div class="panel" role="tabpanel" id="panel-research" aria-labelledby="tab-research" hidden>
+      <div class="panel-intro">
+        <p class="panel-kick"><span lang="pt-PT">Investigação · Publicação · Redes</span><span lang="en-GB">Research · Publication · Networks</span></p>
+        <h3><span lang="pt-PT">Tecnologia educativa, com evidência.</span><span lang="en-GB">Educational technology, with evidence.</span></h3>
+        <p lang="pt-PT">Investigação sobre metodologias ativas e tecnologias digitais, do vídeo em dispositivos móveis à inteligência artificial generativa.</p>
+        <p lang="en-GB">Research on active methodologies and digital technologies, from video on mobile devices to generative AI.</p>
+        <ul class="chips">
+          <li><span lang="pt-PT">Universidade de Salamanca</span><span lang="en-GB">University of Salamanca</span></li>
+          <li>INSIGHT · Piaget</li>
+          <li>Erasmus+</li>
+          <li>European Digital Education Hub</li>
+        </ul>
+        <div class="facts">
+          <div class="fact"><small>Ciência ID</small><b>0E19-A634-A97C</b></div>
+          <div class="fact"><small>ORCID</small><b><a href="https://orcid.org/0000-0001-8933-2594" target="_blank" rel="noopener">0000-0001-8933-2594 ↗</a></b></div>
+        </div>
+        <div class="plinks">
+          <a class="btn primary" href="https://orcid.org/0000-0001-8933-2594" target="_blank" rel="noopener"><span lang="pt-PT">Perfil ORCID ↗</span><span lang="en-GB">ORCID profile ↗</span></a>
+          <a class="btn" href="https://www.cienciavitae.pt/0E19-A634-A97C" target="_blank" rel="noopener">Ciência Vitae ↗</a>
+        </div>
+      </div>
+      <div>
+        <p class="entries-hint"><span lang="pt-PT">Selecione uma entrada ↙</span><span lang="en-GB">Select an entry ↙</span></p>
+        <div class="entries">
+          <details class="entry" open>
+            <summary><span class="r-when">2014 — <span lang="pt-PT">atual</span><span lang="en-GB">present</span></span><span class="r-what"><strong><span lang="pt-PT">Doutoramento em Ciências da Educação</span><span lang="en-GB">PhD in Educational Sciences</span></strong><span class="sub"><span lang="pt-PT">Universidade de Salamanca · Tecnologia Educativa</span><span lang="en-GB">University of Salamanca · Educational Technology</span></span></span><span class="r-plus" aria-hidden="true">+</span></summary>
+            <div class="r-body">
+              <p lang="pt-PT">O trabalho doutoral começou com a edição de vídeo em dispositivos móveis para a compreensão de threshold concepts nas áreas STEM e alargou-se à robótica educativa, à realidade virtual e aumentada e à IA generativa na formação de professores.</p>
+              <p lang="en-GB">The doctoral work began with video editing on mobile devices to help students grasp threshold concepts in STEM and has since expanded to educational robotics, virtual and augmented reality and generative AI in teacher education.</p>
+            </div>
+          </details>
+          <details class="entry">
+            <summary><span class="r-when">2024 — <span lang="pt-PT">atual</span><span lang="en-GB">present</span></span><span class="r-what"><strong><span lang="pt-PT">Investigador</span><span lang="en-GB">Researcher</span></strong><span class="sub">INSIGHT – Piaget Research Center for Ecological Human Development</span></span><span class="r-plus" aria-hidden="true">+</span></summary>
+            <div class="r-body">
+              <p lang="pt-PT">Investigação em inovação pedagógica no ensino superior, saúde digital (DigiSaúde) e matemática recreativa (Fute_mática, 2022–2030). Integra o projeto de financiamento plurianual da FCT ao centro (UID/06334/2025, 2025–2029).</p>
+              <p lang="en-GB">Research on pedagogical innovation in higher education, digital health (DigiSaúde) and recreational mathematics (Fute_mática, 2022–2030). Part of the centre’s multi-year FCT funding project (UID/06334/2025, 2025–2029).</p>
+            </div>
+          </details>
+          <details class="entry">
+            <summary><span class="r-when">2014 — 2026</span><span class="r-what"><strong><span lang="pt-PT">Investigador</span><span lang="en-GB">Researcher</span></strong><span class="sub"><span lang="pt-PT">Centro de Investigação em Educação (CIEd) · Universidade do Minho</span><span lang="en-GB">Research Centre on Education (CIEd) · University of Minho</span></span></span><span class="r-plus" aria-hidden="true">+</span></summary>
+            <div class="r-body">
+              <p lang="pt-PT">Investigação sobre tecnologias digitais na educação, incluindo o manual para professores sobre a utilização pedagógica e didática das ferramentas digitais, publicado pelo CIEd em 2025.</p>
+              <p lang="en-GB">Research on digital technologies in education, including the teachers’ guide to the pedagogical and instructional use of digital tools, published by CIEd in 2025.</p>
+            </div>
+          </details>
+          <details class="entry">
+            <summary><span class="r-when">2023 — 2026</span><span class="r-what"><strong><span lang="pt-PT">Projetos europeus</span><span lang="en-GB">European projects</span></strong><span class="sub">Erasmus+ · E4TLI</span></span><span class="r-plus" aria-hidden="true">+</span></summary>
+            <div class="r-body">
+              <ul class="refs">
+                <li lang="pt-PT"><b>The Power of AR and VR</b> (KA220-VET, 2024–2026), com o Instituto Piaget como parceiro português.</li>
+                <li lang="en-GB"><b>The Power of AR and VR</b> (KA220-VET, 2024–2026), with Instituto Piaget as the Portuguese partner.</li>
+                <li lang="pt-PT"><b>Empower Digi Teach</b>, sobre competências digitais docentes e gamificação, com reuniões em Braga, Barcelona, Timișoara e Esmirna (2023–2025).</li>
+                <li lang="en-GB"><b>Empower Digi Teach</b>, on teachers’ digital competences and gamification, with meetings in Braga, Barcelona, Timișoara and Izmir (2023–2025).</li>
+                <li lang="pt-PT"><b>Education for Technological Literacy and Inclusion (E4TLI)</b>, com o guia de boas práticas publicado em Bilbau (2025).</li>
+                <li lang="en-GB"><b>Education for Technological Literacy and Inclusion (E4TLI)</b>, with its good-practice guide published in Bilbao (2025).</li>
+              </ul>
+            </div>
+          </details>
+          <details class="entry">
+            <summary><span class="r-when">2025 — 2027</span><span class="r-what"><strong><span lang="pt-PT">Redes europeias</span><span lang="en-GB">European networks</span></strong><span class="sub">European Digital Education Hub · Science on Stage</span></span><span class="r-plus" aria-hidden="true">+</span></summary>
+            <div class="r-body">
+              <p lang="pt-PT">Membro do Working Group on Assessment of Digital Skills do European Digital Education Hub (2026–2027). Um dos 22 professores de 14 países do projeto STEM Jobs for the Future, da Science on Stage (2025–2027), onde desenvolve materiais sobre experiências de RV para a educação para a saúde. Em setembro de 2026 participou no STEM Futures Community Workshop do European Digital Education Hub, em Berlim, e na terceira reunião do grupo de trabalho sobre avaliação de competências digitais.</p>
+              <p lang="en-GB">Member of the European Digital Education Hub Working Group on Assessment of Digital Skills (2026–2027). One of 22 teachers from 14 countries in Science on Stage’s STEM Jobs for the Future project (2025–2027), where he develops materials on VR experiences for health education. In September 2026 he took part in the European Digital Education Hub’s STEM Futures Community Workshop in Berlin and in the third meeting of the working group on digital skills assessment.</p>
+            </div>
+          </details>
+          <details class="entry">
+            <summary><span class="r-when">2025 — 2027</span><span class="r-what"><strong><span lang="pt-PT">Publicações selecionadas</span><span lang="en-GB">Selected publications</span></strong><span class="sub">IGI Global · IEEE · Springer · EDEN · Indagatio Didactica</span></span><span class="r-plus" aria-hidden="true">+</span></summary>
+            <div class="r-body">
+              <ul class="refs">
+                <li>Magalhães, C. (2027). Virtual reality and augmented reality in teacher training: Redefining pedagogical practices in higher education. In A. P. Lopes &amp; F. Soares (Eds.), <i>Advancing STEAM education at the intersection of AI and digital technologies</i>. IGI Global Scientific Publishing.</li>
+                <li>Magalhães, C. (2026). Designing for immersion: Story-driven gamification in FrameVR as a pedagogy for initial teacher education. In <i>2026 IEEE International Symposium on Emerging Metaverse (ISEMV)</i> (pp. 87–94). IEEE.</li>
+                <li>Magalhães, C. (2026). Reconfiguring to teach: Pedagogical responses to the integration of artificial intelligence in teacher professional development. <i>EDEN 2026 Annual Conference Proceedings, 7</i>(1), 54.</li>
+                <li>Magalhães, C. (2026). Pedagogy first: Fostering critical thinking through responsible AI integration – Lessons from a teacher professional development programme in Portugal. <i>AI for Education (AIFE 2026)</i>. <span lang="pt-PT">(Aceite para publicação)</span><span lang="en-GB">(Accepted for publication)</span></li>
+                <li>Pinto, H., Silva, Â., Magalhães, C., &amp; Figueiroa, A. (2026). Vamos jogar futebol! Ou vamos estudar matemática? <i>Indagatio Didactica, 18</i>(3), 113–128.</li>
+                <li>Magalhães, C. (2026). Empowering teachers to integrate virtual reality in education. In M. Abed, D. Liu, &amp; A. Tlili (Eds.), <i>Metaverse and artificial intelligence in education for a sustainable society</i> (pp. 167–179). Springer Singapore.</li>
+                <li>Magalhães, C. (2026). Reconfiguring pedagogy in the age of generative AI: A blended continuing professional development programme for basic and secondary school teachers. <i>Germinare, 6</i>, e202605.</li>
+                <li>Pinto, H., Magalhães, C., Figueiroa, A., &amp; Silva, Â. (2026). <i>A Matemática do nosso Mundial</i>. Federação Portuguesa de Futebol. <span lang="pt-PT">(No prelo)</span><span lang="en-GB">(In press)</span></li>
+                <li>Bento, M., Magalhães, C., Da Silva, A. V. M., &amp; Lencastre, J. A. (2025). The emergence of artificial intelligence in education: Why is ChatGPT a “game changer” for teaching and learning. In <i>2025 5th International Conference on Educational Technology (ICET)</i> (pp. 419–427). IEEE.</li>
+                <li>Leitão, A., Marques, P., Tavares, A., &amp; Magalhães, C. (2025). Do vínculo pedagógico à comunidade cooperativa: “Alavancas” para o bem-estar estudantil no ensino superior. <i>PRATICA, 8</i>(2), 115–123.</li>
+                <li>Magalhães, C., Bento, M., &amp; Lencastre, J. A. (2025). Immersive virtual learning spaces for emotional engagement in education with the classroom-ready virtual reality device CLASS VR. In <i>Immersive Learning Research Network</i> (pp. 460–470). Springer Nature.</li>
+                <li>Lencastre, J. A., Casanova, J. R., &amp; Magalhães, C. (2025). <i>Manual para professores sobre a utilização pedagógica e didática das ferramentas digitais</i>. CIEd, Universidade do Minho.</li>
+              </ul>
+            </div>
+          </details>
+          <details class="entry">
+            <summary><span class="r-when">2024 — 2026</span><span class="r-what"><strong><span lang="pt-PT">Comunicações internacionais</span><span lang="en-GB">International presentations</span></strong><span class="sub"><span lang="pt-PT">Europa · Ásia · Brasil</span><span lang="en-GB">Europe · Asia · Brazil</span></span></span><span class="r-plus" aria-hidden="true">+</span></summary>
+            <div class="r-body">
+              <p lang="pt-PT">Em 2026: duas comunicações na ICEBM 2026 (Varna, Bulgária), IEEE ISEMV (Larnaca), EDEN 2026 (Porto), TECH-EDU 2026 (Alexandroupolis), JUTE 2026 e XIV Congreso Iberoamericano de Docencia Universitaria (Santiago de Compostela), XI SITDE (Maranhão), IDEAS’26 (Porto), ieTIC’26 (Madrid) e 6.º Meetup GEG Noroeste (Oviedo). Comunicação aceite na AIFE 2026 (Singapura). Antes: 4th European Summit of STEAM Educators e iLRN 2024 (Glasgow).</p>
+              <p lang="en-GB">In 2026: two papers at ICEBM 2026 (Varna, Bulgaria), IEEE ISEMV (Larnaca), EDEN 2026 (Porto), TECH-EDU 2026 (Alexandroupolis), JUTE 2026 and the 14th Ibero-American Congress on University Teaching (Santiago de Compostela), XI SITDE (Maranhão), IDEAS’26 (Porto), ieTIC’26 (Madrid) and the 6th GEG Noroeste Meetup (Oviedo). Paper accepted at AIFE 2026 (Singapore). Earlier: the 4th European Summit of STEAM Educators and iLRN 2024 (Glasgow).</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu">
+      <div class="edu-head"><h3><span lang="pt-PT">Formação académica</span><span lang="en-GB">Academic background</span></h3><a href="https://orcid.org/0000-0001-8933-2594" target="_blank" rel="noopener"><span lang="pt-PT">Publicações e percurso no ORCID ↗</span><span lang="en-GB">Publications and record on ORCID ↗</span></a></div>
+      <ol>
+        <li><span class="y">2014 →</span><span><b><span lang="pt-PT">Doutoramento em Ciências da Educação, Tecnologia Educativa (em curso)</span><span lang="en-GB">PhD in Educational Sciences, Educational Technology (in progress)</span></b><span class="sub"><span lang="pt-PT">Universidade de Salamanca</span><span lang="en-GB">University of Salamanca</span></span></span></li>
+        <li><span class="y">2025</span><span><b><span lang="pt-PT">Microcredencial em Educação a Distância e Digital (4 ECTS)</span><span lang="en-GB">Micro-credential in Distance and Digital Education (4 ECTS)</span></b><span class="sub">Universidade Aberta</span></span></li>
+        <li><span class="y">2012</span><span><b><span lang="pt-PT">Mestrado em Tecnologias da Informação e da Comunicação, Comunicação Multimédia</span><span lang="en-GB">Master’s in Information and Communication Technologies, Multimedia Communication</span></b><span class="sub">Instituto Piaget</span></span></li>
+        <li><span class="y">2008</span><span><b><span lang="pt-PT">Título de Especialista em Comunicação Educacional e Gestão da Informação</span><span lang="en-GB">Specialist title in Educational Communication and Information Management</span></b><span class="sub">Instituto Piaget</span></span></li>
+        <li><span class="y">2007</span><span><b><span lang="pt-PT">Pós-Graduação em Tecnologias da Informação e da Comunicação</span><span lang="en-GB">Postgraduate Diploma in Information and Communication Technologies</span></b><span class="sub">Instituto Piaget</span></span></li>
+        <li><span class="y">2003</span><span><b><span lang="pt-PT">Mestrado em Sistemas de Informação, Inteligência Artificial</span><span lang="en-GB">Master’s in Information Systems, Artificial Intelligence</span></b><span class="sub"><span lang="pt-PT">Universidade do Minho</span><span lang="en-GB">University of Minho</span></span></span></li>
+        <li><span class="y">1994</span><span><b><span lang="pt-PT">Licenciatura em Engenharia Zootécnica</span><span lang="en-GB">Degree in Animal Science Engineering</span></b><span class="sub"><span lang="pt-PT">Universidade dos Açores</span><span lang="en-GB">University of the Azores</span></span></span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact" style="padding-top:0">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker"><span lang="pt-PT">05 / Contacto e próximos passos</span><span lang="en-GB">05 / Contact &amp; next steps</span></p>
+      <h2 lang="pt-PT">Vamos construir aprendizagem com <em>intenção</em>.</h2>
+      <h2 lang="en-GB">Let’s build learning with <em>intent</em>.</h2>
+      <p class="sec-lede" lang="pt-PT">Para colaborações em investigação, formação de professores, projetos europeus, oficinas ou conferências.</p>
+      <p class="sec-lede" lang="en-GB">For collaboration in research, teacher education, European projects, workshops or conferences.</p>
+    </header>
+    <div class="tiles">
+      <div class="tile email">
+        <small><span lang="pt-PT">Email institucional</span><span lang="en-GB">Institutional email</span></small>
+        <span class="addr" id="addr">celestino.magalhaes@<wbr>ipiaget.pt</span>
+        <div class="tile-actions">
+          <button type="button" class="copy" id="copyBtn"><span lang="pt-PT">Copiar</span><span lang="en-GB">Copy</span></button>
+          <a href="mailto:celestino.magalhaes@ipiaget.pt"><span lang="pt-PT">Abrir no email</span><span lang="en-GB">Open in email</span></a>
+          <span class="copied" id="copied" aria-live="polite"></span>
+        </div>
+      </div>
+      <a class="tile" href="https://orcid.org/0000-0001-8933-2594" target="_blank" rel="noopener"><small>ORCID</small><b><span lang="pt-PT">Publicações e identificador de autor</span><span lang="en-GB">Publications and author ID</span></b><span class="go">↗</span></a>
+      <a class="tile" href="https://www.cienciavitae.pt/0E19-A634-A97C" target="_blank" rel="noopener"><small>Ciência Vitae</small><b><span lang="pt-PT">Currículo científico completo</span><span lang="en-GB">Full academic CV</span></b><span class="go">↗</span></a>
+      <a class="tile" href="#cv"><small><span lang="pt-PT">Percurso</span><span lang="en-GB">Path</span></small><b><span lang="pt-PT">Voltar ao CV interativo</span><span lang="en-GB">Back to the interactive CV</span></b><span class="go">↑</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Celestino Magalhães</span>
+    <span lang="pt-PT">Feito para quem ensina a construir · Atualizado em novembro de 2026</span>
+    <span lang="en-GB">Made for teachers who build · Updated November 2026</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function lang(){return root.getAttribute('data-lang')==='en'?'en':'pt';}
+
+  /* ---------- Language ---------- */
+  function applyLang(l){
+    root.setAttribute('data-lang',l);
+    root.lang=(l==='en'?'en-GB':'pt-PT');
+    document.querySelectorAll('[data-set-lang]').forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-set-lang')===l));});
+    document.querySelectorAll('[data-aria-pt]').forEach(function(el){el.setAttribute('aria-label',el.getAttribute(l==='en'?'data-aria-en':'data-aria-pt'));});
+    document.querySelectorAll('[data-alt-pt]').forEach(function(el){el.setAttribute('alt',el.getAttribute(l==='en'?'data-alt-en':'data-alt-pt'));});
+    try{localStorage.setItem('cm-lang',l);}catch(e){}
+  }
+  document.querySelectorAll('[data-set-lang]').forEach(function(b){
+    b.addEventListener('click',function(){applyLang(b.getAttribute('data-set-lang'));});
+  });
+  applyLang(lang());
+
+  /* ---------- Menu ---------- */
+  var nav=document.getElementById('nav'),menuBtn=document.getElementById('menuBtn');
+  menuBtn.addEventListener('click',function(){var o=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(o));});
+  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');});});
+
+  /* ---------- Progress + active section ---------- */
+  var prog=document.getElementById('progress');
+  function onScroll(){
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    var p=h>0?Math.round(Math.min(1,Math.max(0,window.scrollY/h))*100):0;
+    prog.textContent=(p<10?'0':'')+p+'%';
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  if('IntersectionObserver' in window){
+    var links={};nav.querySelectorAll('a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a;});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){Object.keys(links).forEach(function(k){links[k].classList.toggle('is-active',k===e.target.id);});}});},{rootMargin:'-45% 0px -50% 0px'});
+    ['news','work','lab','about','cv','contact'].forEach(function(id){var s=document.getElementById(id);if(s)io.observe(s);});
+  }
+
+  /* ---------- CV tabs ---------- */
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function selectTab(name,focus){
+    tabs.forEach(function(t){
+      var on=t.getAttribute('data-tab')===name;
+      t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+      if(on&&focus)t.focus();
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){selectTab(t.getAttribute('data-tab'));});
+    t.addEventListener('keydown',function(e){
+      if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();var n=tabs[(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length];selectTab(n.getAttribute('data-tab'),true);}
+    });
+  });
+  document.querySelectorAll('a[href="#cv"][data-tab]').forEach(function(a){a.addEventListener('click',function(){selectTab(a.getAttribute('data-tab'));});});
+
+  /* ---------- Copy email ---------- */
+  var copyBtn=document.getElementById('copyBtn'),copied=document.getElementById('copied'),addr=document.getElementById('addr');
+  function selectAddr(){var r=document.createRange();r.selectNodeContents(addr);var s=window.getSelection();s.removeAllRanges();s.addRange(r);}
+  copyBtn.addEventListener('click',function(){
+    var text=addr.textContent.trim();
+    function ok(){copied.textContent=lang()==='en'?'Copied':'Copiado';setTimeout(function(){copied.textContent='';},2200);}
+    function fail(){selectAddr();copied.textContent=lang()==='en'?'Selected, ready to copy':'Selecionado para copiar';}
+    try{navigator.clipboard.writeText(text).then(ok,fail);}catch(e){fail();}
+  });
+
+  /* ---------- Orbit model ---------- */
+  var NODES=[
+    {y:'2014',href:'#lab',pt:'Vídeo',en:'Video',tpt:'Vídeo educativo',ten:'Educational video',
+     dpt:'Edição de vídeo em dispositivos móveis para compreender threshold concepts nas áreas STEM. Foi aqui que o doutoramento começou.',
+     den:'Video editing on mobile devices to help students grasp threshold concepts in STEM. This is where the doctorate began.',lpt:'Ver o arquivo ↓',len:'See the archive ↓'},
+    {y:'2021',href:'#p-robotics',pt:'Robótica',en:'Robotics',tpt:'Robótica educativa',ten:'Educational robotics',
+     dpt:'Desafios de matemática com robôs para o pensamento computacional, do 1.º ciclo ao clube AlfaROBOT.',
+     den:'Maths challenges with robots for computational thinking, from primary school to the AlfaROBOT club.',lpt:'Ver projeto ↓',len:'See project ↓'},
+    {y:'2022',href:'#p-futematica',pt:'Fute_mática',en:'Fute_mática',tpt:'Fute_mática',ten:'Fute_mática',
+     dpt:'Matemática através do futebol, em livros, oficinas e comunicações com colegas investigadores.',
+     den:'Mathematics through football, in books, workshops and talks with fellow researchers.',lpt:'Ver projeto ↓',len:'See project ↓'},
+    {y:'2022',href:'#p-vr',pt:'RV · RA',en:'VR · AR',tpt:'Realidade virtual e aumentada',ten:'Virtual and augmented reality',
+     dpt:'Ambientes imersivos com ClassVR, FrameVR.io e realidade aumentada na formação de professores.',
+     den:'Immersive environments with ClassVR, FrameVR.io and augmented reality in teacher education.',lpt:'Ver projeto ↓',len:'See project ↓'},
+    {y:'2023',href:'#p-ai',pt:'IA generativa',en:'Generative AI',tpt:'Inteligência artificial generativa',ten:'Generative AI',
+     dpt:'IA com pensamento crítico, na formação contínua de professores e no ensino superior.',
+     den:'AI with critical thinking, in teacher professional development and higher education.',lpt:'Ver projeto ↓',len:'See project ↓'},
+    {y:'2024',href:'#p-spaces',pt:'Espaços',en:'Spaces',tpt:'Espaços de aprendizagem',ten:'Learning spaces',
+     dpt:'Espaços flexíveis e aprendizagem cooperativa no ensino superior, com o Pedagogia XXI.',
+     den:'Flexible spaces and cooperative learning in higher education, with Pedagogia XXI.',lpt:'Ver projeto ↓',len:'See project ↓'}
+  ];
+  var NS='http://www.w3.org/2000/svg',svg=document.getElementById('orbit');
+  var cx=260,cy=164,rx=190,ry=80,N=NODES.length,step=Math.PI*2/N,TAU=Math.PI*2;
+  function el(tag,attrs,parent,text){var e=document.createElementNS(NS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);if(text!=null)e.textContent=text;if(parent)parent.appendChild(e);return e;}
+  var deco=el('g',{},svg);
+  el('line',{x1:cx,y1:14,x2:cx,y2:316,'class':'o-axis'},deco);
+  el('line',{x1:24,y1:cy,x2:496,y2:cy,'class':'o-axis'},deco);
+  el('ellipse',{cx:cx,cy:cy,rx:rx+26,ry:ry+40,'class':'o-faint',transform:'rotate(-13 '+cx+' '+cy+')'},deco);
+  el('ellipse',{cx:cx,cy:cy,rx:rx,ry:ry,'class':'o-orbit'},deco);
+  for(var t=0;t<36;t++){var a=t*TAU/36;el('line',{x1:cx+(rx-5)*Math.cos(a),y1:cy+(ry-3)*Math.sin(a),x2:cx+(rx+5)*Math.cos(a),y2:cy+(ry+3)*Math.sin(a),'class':'o-tick'},deco);}
+  el('text',{x:26,y:26,'class':'o-note'},deco,'Ø 2014 → 2026');
+  el('text',{x:494,y:314,'class':'o-note','text-anchor':'end'},deco,'n = 6');
+  var link=el('line',{'class':'o-link'},svg);
+  var back=el('g',{},svg);
+  var center=el('g',{},svg);
+  el('circle',{cx:cx,cy:cy,r:82,'class':'o-ring2'},center);
+  el('circle',{cx:cx,cy:cy,r:70,'class':'o-ring'},center);
+  el('text',{x:cx,y:cy-4,'class':'o-c1',lang:'pt-PT'},center,'Metodologias ativas');
+  el('text',{x:cx,y:cy+15,'class':'o-c2',lang:'pt-PT'},center,'× tecnologias digitais');
+  el('text',{x:cx,y:cy-4,'class':'o-c1',lang:'en-GB'},center,'Active methodologies');
+  el('text',{x:cx,y:cy+15,'class':'o-c2',lang:'en-GB'},center,'× digital technologies');
+  var front=el('g',{},svg);
+
+  var nodes=NODES.map(function(n,i){
+    var g=el('g',{'class':'node',tabindex:'0',role:'button','data-i':i});
+    el('circle',{r:17,'class':'halo'},g);
+    el('circle',{r:9,'class':'dot'},g);
+    var lp=el('text',{'class':'lbl',lang:'pt-PT'},g,n.pt);
+    var le=el('text',{'class':'lbl',lang:'en-GB'},g,n.en);
+    var yr=el('text',{'class':'yr'},g,n.y);
+    g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();select(i,true);}});
+    g.addEventListener('focus',function(){pauseUntil=performance.now()+6000;});
+    return {g:g,lp:lp,le:le,yr:yr,side:0,parent:null};
+  });
+
+  var sel=3,phi=Math.PI/2-sel*step,target=null,dragging=false,hovering=false,pauseUntil=0;
+  function layout(){
+    var sx=0,sy=0;
+    nodes.forEach(function(n,i){
+      var th=phi+i*step,x=cx+rx*Math.cos(th),y=cy+ry*Math.sin(th),s=Math.sin(th),depth=(s+1)/2;
+      var sc=0.72+0.4*depth;
+      n.g.setAttribute('transform','translate('+x.toFixed(1)+' '+y.toFixed(1)+') scale('+sc.toFixed(3)+')');
+      n.g.style.opacity=(0.4+0.6*depth).toFixed(3);
+      var side=s>=0?1:-1;
+      if(side!==n.side){
+        n.side=side;
+        var ly=side>0?30:-22,yy=side>0?44:-38;
+        n.lp.setAttribute('y',ly);n.le.setAttribute('y',ly);n.yr.setAttribute('y',yy);
+      }
+      var p=depth>0.5?front:back;
+      if(n.parent!==p){p.appendChild(n.g);n.parent=p;}
+      if(i===sel){sx=x;sy=y;}
+    });
+    var dx=sx-cx,dy=sy-cy,len=Math.sqrt(dx*dx+dy*dy)||1;
+    link.setAttribute('x1',(cx+dx/len*70).toFixed(1));link.setAttribute('y1',(cy+dy/len*70).toFixed(1));
+    link.setAttribute('x2',(sx-dx/len*12).toFixed(1));link.setAttribute('y2',(sy-dy/len*12).toFixed(1));
+  }
+  var caption=document.getElementById('caption'),count=document.getElementById('nodeCount'),mlinks=document.getElementById('modelLinks');
+  var chipEls=NODES.map(function(n,i){
+    var a=document.createElement('a');a.href=n.href;
+    a.innerHTML='<span lang="pt-PT">'+n.tpt+'</span><span lang="en-GB">'+n.ten+'</span>';
+    a.addEventListener('mouseenter',function(){select(i,true);});
+    a.addEventListener('focus',function(){select(i,true);});
+    mlinks.appendChild(a);return a;
+  });
+  function renderCaption(){
+    var n=NODES[sel];
+    caption.innerHTML='<div class="cap-year">'+n.y+'</div>'+
+      '<div class="cap-title"><span lang="pt-PT">'+n.tpt+'</span><span lang="en-GB">'+n.ten+'</span></div>'+
+      '<p lang="pt-PT">'+n.dpt+'</p><p lang="en-GB">'+n.den+'</p>'+
+      '<a href="'+n.href+'"><span lang="pt-PT">'+n.lpt+'</span><span lang="en-GB">'+n.len+'</span></a>';
+    count.textContent=(sel+1<10?'0':'')+(sel+1)+' / 0'+N;
+    nodes.forEach(function(nd,i){nd.g.classList.toggle('sel',i===sel);nd.g.setAttribute('aria-pressed',String(i===sel));nd.g.setAttribute('aria-label',NODES[i].tpt+' / '+NODES[i].ten+', '+NODES[i].y);});
+    chipEls.forEach(function(c,i){c.classList.toggle('on',i===sel);});
+  }
+  function select(i,animate){
+    sel=i;renderCaption();
+    var base=Math.PI/2-i*step,k=Math.round((phi-base)/TAU),tg=base+k*TAU;
+    pauseUntil=performance.now()+5000;
+    if(reduce||!animate){phi=tg;target=null;layout();}else{target=tg;}
+  }
+
+  var startX=0,startPhi=0,moved=false,downNode=null;
+  svg.addEventListener('pointerdown',function(e){
+    dragging=true;moved=false;startX=e.clientX;startPhi=phi;target=null;
+    downNode=e.target.closest?e.target.closest('.node'):null;
+    try{svg.setPointerCapture(e.pointerId);}catch(err){}
+  });
+  svg.addEventListener('pointermove',function(e){
+    if(!dragging)return;var dx=e.clientX-startX;
+    if(Math.abs(dx)>4){moved=true;svg.classList.add('dragging');}
+    if(moved){phi=startPhi+dx*0.009;if(reduce)layout();}
+  });
+  function endDrag(){
+    if(!dragging)return;dragging=false;svg.classList.remove('dragging');
+    pauseUntil=performance.now()+3000;
+    if(!moved&&downNode){select(+downNode.getAttribute('data-i'),true);}
+    else if(moved){var best=0,bd=9;nodes.forEach(function(n,i){var th=((phi+i*step)%TAU+TAU)%TAU,d=Math.abs(th-Math.PI/2);if(d<bd){bd=d;best=i;}});sel=best;renderCaption();}
+    downNode=null;
+  }
+  svg.addEventListener('pointerup',endDrag);svg.addEventListener('pointercancel',endDrag);
+  svg.addEventListener('mouseenter',function(){hovering=true;});
+  svg.addEventListener('mouseleave',function(){hovering=false;});
+
+  renderCaption();layout();
+  if(!reduce){
+    var last=performance.now();
+    (function frame(now){
+      var dt=Math.min(60,now-last)/1000;last=now;
+      if(target!==null){var d=target-phi;if(Math.abs(d)<0.002){phi=target;target=null;}else{phi+=d*Math.min(1,dt*6);}}
+      else if(!dragging&&!hovering&&now>pauseUntil){phi+=0.1*dt;}
+      layout();requestAnimationFrame(frame);
+    })(last);
+  }
+})();
+</script>
+
+</body>
+</html>
